@@ -11,6 +11,13 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://baileycode.com/">
 <meta name="theme-color" content="#0d0b08">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta property="og:image" content="https://baileycode.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Tony Bailey, founder of Bailey Code, with the tagline: figuring out the code to finding you.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://baileycode.com/og.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144,400;1,9..144,500&family=JetBrains+Mono:wght@400;500&display=swap">
@@ -34,7 +41,8 @@
 <main id="top">
 
   <section class="hero">
-    <div class="col-wide">
+    <div class="col-wide hero-grid">
+     <div class="hero-text">
       <div class="hero-eyebrow">AI consulting &amp; counselling for human services</div>
       <h1 class="hero-logo">Bailey<span class="code">Code</span></h1>
       <p class="hero-tagline">Figuring out the code to finding you.</p>
@@ -43,6 +51,10 @@
         <a href="#contact" class="btn btn-primary">Book a conversation <span class="btn-arrow">&rarr;</span></a>
         <a href="#services" class="btn btn-secondary">See the work</a>
       </div>
+     </div>
+     <figure class="hero-photo">
+       <img src="/tony.jpg" width="480" height="600" alt="Portrait of Tony Bailey, founder of Bailey Code, in black and white" fetchpriority="high">
+     </figure>
     </div>
   </section>
 
@@ -187,12 +199,12 @@
           <span class="arrow">Read on LinkedIn &rarr;</span>
         </a>
 
-        <div class="else-card">
+        <a class="else-card" href="https://podcasts.apple.com/us/podcast/fall-from-grace/id1844600278" target="_blank" rel="noopener">
           <div class="else-tag">Podcast</div>
           <h4>Fall From Grace</h4>
           <p>My own story of coming apart and rebuilding, now with the late ADHD diagnosis at the centre. A memoir-in-progress lives alongside it.</p>
-          <span class="arrow">Link coming soon</span>
-        </div>
+          <span class="arrow">Listen on Apple Podcasts &rarr;</span>
+        </a>
 
         <a class="else-card" href="https://kintsugiheroes.com.au" target="_blank" rel="noopener">
           <div class="else-tag">Day job &middot; 24h / week</div>
@@ -201,12 +213,16 @@
           <span class="arrow">kintsugiheroes.com.au &rarr;</span>
         </a>
 
-        <a class="else-card" href="https://www.linkedin.com/in/tonybailey" target="_blank" rel="noopener">
+        <div class="else-card">
           <div class="else-tag">Social</div>
-          <h4>LinkedIn</h4>
-          <p>Where most of the professional conversations start. Writing weekly, posting occasionally, open to DMs about work or a conversation.</p>
-          <span class="arrow">linkedin.com/in/tonybailey &rarr;</span>
-        </a>
+          <h4>Find me</h4>
+          <p>Where most professional conversations start, plus the podcast's home on Instagram and its subscribe page.</p>
+          <ul class="social-list">
+            <li><a href="https://www.linkedin.com/in/tonybailey" target="_blank" rel="noopener">LinkedIn <span>/in/tonybailey</span></a></li>
+            <li><a href="https://instagram.com/fallfromgracewithtony" target="_blank" rel="noopener">Instagram <span>@fallfromgracewithtony</span></a></li>
+            <li><a href="https://fallfromgrace.riverside.com/" target="_blank" rel="noopener">Podcast updates <span>fallfromgrace.riverside.com</span></a></li>
+          </ul>
+        </div>
 
       </div>
     </div>
@@ -219,6 +235,7 @@
 
       <div class="about-grid">
         <div class="about-body">
+          <img class="about-photo" src="/tony.jpg" width="480" height="600" loading="lazy" alt="Tony Bailey looking into the camera, black and white portrait">
           <p>I'm an AI consultant, podcast producer and counsellor-in-training based in Melbourne. I came to this work the long way around: thirty-plus surgeries from a cleft palate, a business that collapsed, ten years of trying to get sober before it stuck, and a late ADHD diagnosis that finally named what was underneath.</p>
           <p>Every system I build now, every policy I write, every consent gate I design into a production platform, is <em>the support structure I didn't have</em> made available to someone else. That's the work. The AI consulting is one surface of it. The counselling, when I'm qualified, is another.</p>
           <p>Bailey Code is a single-operator business by design. Small, considered, honest, and never bigger than I can hold with care.</p>
@@ -264,7 +281,7 @@
 <footer>
   <div class="col-wide footer-inner">
     <div class="footer-brand">Bailey<span class="mark">Code</span></div>
-    <div class="footer-meta">Melbourne &middot; &copy; 2026 Tony Bailey &middot; <a href="/privacy.html">Privacy</a></div>
+    <div class="footer-meta">Melbourne &middot; &copy; 2026 Tony Bailey &middot; <a href="/privacy">Privacy</a></div>
   </div>
 </footer>
 

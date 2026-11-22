@@ -24,7 +24,7 @@ section + section{border-top:1px solid var(--rule)}
 
 .navbar{position:sticky;top:0;z-index:10;background:rgba(13,11,8,0.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--rule);padding:14px max(16px,env(safe-area-inset-left,0px));margin-left:calc(-1 * max(20px,env(safe-area-inset-left,0px)));margin-right:calc(-1 * max(20px,env(safe-area-inset-right,0px)))}
 .navbar-inner{max-width:var(--col-wide);margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:16px}
-.brand{display:flex;align-items:baseline;gap:10px;font-family:var(--serif);font-weight:600;font-variation-settings:"opsz" 36;font-size:19px;letter-spacing:-0.015em;color:var(--ink)}
+.brand{display:flex;align-items:baseline;gap:0;font-family:var(--serif);font-weight:600;font-variation-settings:"opsz" 36;font-size:19px;letter-spacing:-0.015em;color:var(--ink)}
 .brand .mark{color:var(--gold)}
 .navlinks{display:flex;gap:28px;font-family:var(--mono);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-dim)}
 .navlinks a{transition:color .15s}
@@ -128,3 +128,13 @@ footer{padding:48px 0 56px;border-top:1px solid var(--rule);background:var(--bg)
 .legal p{color:var(--ink-soft)}
 
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+.hero-grid{display:grid;grid-template-columns:1fr;gap:48px;align-items:center}
+.hero-photo{margin:0;max-width:420px;border:1px solid var(--rule);border-radius:4px;overflow:hidden;background:var(--bg-card)}
+.hero-photo img{display:block;width:100%;height:auto}
+@media(min-width:900px){.hero-grid{grid-template-columns:1.35fr 1fr;gap:64px}.hero-photo{justify-self:end}}
+.about-photo{display:block;width:100%;max-width:340px;height:auto;margin:0 0 28px;border:1px solid var(--rule);border-radius:4px}
+.social-list{list-style:none;margin:20px 0 0;padding:0;display:grid;gap:10px}
+.social-list a{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 12px;padding:10px 0;border-top:1px solid var(--rule);font-size:15px;color:var(--ink)}
+.social-list a:hover{color:var(--gold-soft)}
+.social-list span{font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:var(--gold-soft)}
