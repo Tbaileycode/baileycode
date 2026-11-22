@@ -12,15 +12,17 @@
 <meta property="og:url" content="https://baileycode.com/">
 <meta name="theme-color" content="#0d0b08">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<meta property="og:image" content="https://baileycode.com/og.png">
+<meta property="og:image" content="https://baileycode.com/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Tony Bailey, founder of Bailey Code, with the tagline: figuring out the code to finding you.">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://baileycode.com/og.png">
+<meta name="twitter:image" content="https://baileycode.com/og.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144,400;1,9..144,500&family=JetBrains+Mono:wght@400;500&display=swap">
+<script>document.documentElement.classList.add("js")</script>
+<link rel="preload" as="image" href="/tony.jpg">
 <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
@@ -40,33 +42,38 @@
 
 <main id="top">
 
-  <section class="hero">
-    <div class="col-wide hero-grid">
-     <div class="hero-text">
+  <section class="hero" aria-label="Introduction">
+    <div class="hero-bg"><img src="/tony.jpg" width="1024" height="1280" alt="Portrait of Tony Bailey, founder of Bailey Code, in black and white" fetchpriority="high"></div>
+    <div class="hero-shade"></div>
+    <div class="hero-inner">
       <div class="hero-eyebrow">AI consulting &amp; counselling for human services</div>
-      <h1 class="hero-logo">Bailey<span class="code">Code</span></h1>
+      <h1 class="hero-logo"><span class="l1">Bailey</span><span class="code">Code</span></h1>
       <p class="hero-tagline">Figuring out the code to finding you.</p>
       <p class="hero-pitch">I help <strong>people and organisations in human services</strong> use AI without losing what makes them human, and I'm training to sit alongside them as a counsellor. Trauma-informed, honestly built, governed in writing. Based in Melbourne, working anywhere.</p>
       <div class="hero-ctas">
         <a href="#contact" class="btn btn-primary">Book a conversation <span class="btn-arrow">&rarr;</span></a>
         <a href="#services" class="btn btn-secondary">See the work</a>
       </div>
-     </div>
-     <figure class="hero-photo">
-       <img src="/tony.jpg" width="480" height="600" alt="Portrait of Tony Bailey, founder of Bailey Code, in black and white" fetchpriority="high">
-     </figure>
     </div>
+    <a href="#services" class="scroll-cue" aria-label="Scroll to services"><span>Scroll</span><i></i></a>
+  </section>
+
+  <section class="quote" aria-label="What drives the work">
+    <blockquote data-reveal>
+      <p>Every system I build now is <em>the support structure I didn't have</em>, made available to someone else.</p>
+      <footer>Tony Bailey, Bailey Code</footer>
+    </blockquote>
   </section>
 
   <section id="services">
     <div class="col-wide">
-      <p class="sec-eyebrow">Services</p>
-      <h2 class="sec-head">Two ways in, <em>one ethos</em>.</h2>
-      <p class="sec-intro">Whether the work is decoding a system or decoding a person, the same values apply: <strong>trauma-informed, consent-first, written down so it holds without me</strong>.</p>
+      <p data-reveal class="sec-eyebrow">Services</p>
+      <h2 data-reveal class="sec-head">Two ways in, <em>one ethos</em>.</h2>
+      <p data-reveal class="sec-intro">Whether the work is decoding a system or decoding a person, the same values apply: <strong>trauma-informed, consent-first, written down so it holds without me</strong>.</p>
 
       <div class="services">
 
-        <article class="svc">
+        <article data-reveal class="svc">
           <div class="svc-num">01</div>
           <div class="svc-tag">Primary offer &middot; Available now</div>
           <h3>AI consulting for human services</h3>
@@ -85,7 +92,7 @@
           </div>
         </article>
 
-        <article class="svc">
+        <article data-reveal class="svc">
           <div class="svc-num">02</div>
           <div class="svc-tag">Coming after Masters</div>
           <h3>Counselling &amp; coaching</h3>
@@ -104,7 +111,7 @@
           </div>
         </article>
 
-        <article class="svc">
+        <article data-reveal class="svc">
           <div class="svc-num">03</div>
           <div class="svc-tag">Consumer product &middot; In development</div>
           <h3>Recovery.Code</h3>
@@ -121,22 +128,22 @@
 
   <section id="pattern" class="pattern">
     <div class="col">
-      <p class="sec-eyebrow">The pattern</p>
-      <h2 class="sec-head">Why one brand holds <em>both services</em>.</h2>
-      <p class="sec-intro">The AI work and the counselling work look different on the outside. Underneath they're the same thing: helping someone, or some organisation, figure out the code they're actually running on, so they can change it with their eyes open.</p>
+      <p data-reveal class="sec-eyebrow">The pattern</p>
+      <h2 data-reveal class="sec-head">Why one brand holds <em>both services</em>.</h2>
+      <p data-reveal class="sec-intro">The AI work and the counselling work look different on the outside. Underneath they're the same thing: helping someone, or some organisation, figure out the code they're actually running on, so they can change it with their eyes open.</p>
 
       <div class="pattern-grid">
-        <div class="pattern-item">
+        <div data-reveal class="pattern-item">
           <div class="pattern-num">i.</div>
           <h4>Decode the system.</h4>
           <p>Every human-services organisation runs on patterns: workflows, decisions, risk appetites, unspoken rules. AI drops into those patterns well or badly depending on whether anyone wrote them down. My job is to <em>read what's actually there</em>, write it, and let AI accelerate the work without rupturing it.</p>
         </div>
-        <div class="pattern-item">
+        <div data-reveal class="pattern-item">
           <div class="pattern-num">ii.</div>
           <h4>Decode the person.</h4>
           <p>Counselling is the same work on a smaller scale. The person is the system. Their beliefs, their inherited rules, their survival patterns, the story they were handed about themselves. Done well, counselling helps someone <em>see the code they've been running</em>, and choose what to keep.</p>
         </div>
-        <div class="pattern-item">
+        <div data-reveal class="pattern-item">
           <div class="pattern-num">iii.</div>
           <h4>The same ethos holds both.</h4>
           <p>Consent-first. Written down. Trauma-informed. Honest about what AI can and can't do, and about what counselling can and can't do. No lock-in, no hype, no promise it won't take real work.</p>
@@ -147,30 +154,30 @@
 
   <section>
     <div class="col-wide">
-      <p class="sec-eyebrow">Proof</p>
-      <h2 class="sec-head">Built in production, <em>not in theory</em>.</h2>
-      <p class="sec-intro">A sample of what I've shipped. Full case study on Kintsugi Studio, the production platform I built solo for a national NFP podcast network, available on request.</p>
+      <p data-reveal class="sec-eyebrow">Proof</p>
+      <h2 data-reveal class="sec-head">Built in production, <em>not in theory</em>.</h2>
+      <p data-reveal class="sec-intro">A sample of what I've shipped. Full case study on Kintsugi Studio, the production platform I built solo for a national NFP podcast network, available on request.</p>
 
       <div class="proof-grid">
-        <div class="proof-cell">
+        <div data-reveal class="proof-cell">
           <div class="proof-num">559</div>
           <div class="proof-label">AI outputs<br>audited at 96% pass</div>
         </div>
-        <div class="proof-cell">
+        <div data-reveal class="proof-cell">
           <div class="proof-num">526</div>
           <div class="proof-label">Role-scoped<br>security rules shipped</div>
         </div>
-        <div class="proof-cell">
+        <div data-reveal class="proof-cell">
           <div class="proof-num">164<span class="unit">days</span></div>
           <div class="proof-label">Solo build<br>from zero to production</div>
         </div>
-        <div class="proof-cell">
+        <div data-reveal class="proof-cell">
           <div class="proof-num">24</div>
           <div class="proof-label">Governance docs<br>to ISO, IEEE, WCAG, NIST</div>
         </div>
       </div>
 
-      <div class="credentials">
+      <div data-reveal class="credentials">
         <span class="g">Grad Cert Counselling &middot; Torrens &middot; Nov 2026</span>
         <span class="g">OAM &middot; 2002</span>
         <span>Masters of Counselling in progress</span>
@@ -186,34 +193,34 @@
 
   <section id="elsewhere">
     <div class="col-wide">
-      <p class="sec-eyebrow">Elsewhere</p>
-      <h2 class="sec-head">Writing, podcasting, <em>the day job</em>.</h2>
-      <p class="sec-intro">Bailey Code is the work. These are the other places you'll find me.</p>
+      <p data-reveal class="sec-eyebrow">Elsewhere</p>
+      <h2 data-reveal class="sec-head">Writing, podcasting, <em>the day job</em>.</h2>
+      <p data-reveal class="sec-intro">Bailey Code is the work. These are the other places you'll find me.</p>
 
       <div class="elsewhere-grid">
 
-        <a class="else-card" href="https://www.linkedin.com/in/tonybailey" target="_blank" rel="noopener">
+        <a data-reveal class="else-card" href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7419178393633570816" target="_blank" rel="noopener">
           <div class="else-tag">Newsletter &middot; Weekly</div>
           <h4>This Week, Honestly</h4>
           <p>Short weekly reflections on recovery, AI, running a one-person business with ADHD, and what I'm actually learning. Trauma-informed. No performance.</p>
-          <span class="arrow">Read on LinkedIn &rarr;</span>
+          <span class="arrow">Subscribe on LinkedIn &rarr;</span>
         </a>
 
-        <a class="else-card" href="https://podcasts.apple.com/us/podcast/fall-from-grace/id1844600278" target="_blank" rel="noopener">
+        <a data-reveal class="else-card" href="https://podcasts.apple.com/us/podcast/fall-from-grace/id1844600278" target="_blank" rel="noopener">
           <div class="else-tag">Podcast</div>
           <h4>Fall From Grace</h4>
           <p>My own story of coming apart and rebuilding, now with the late ADHD diagnosis at the centre. A memoir-in-progress lives alongside it.</p>
           <span class="arrow">Listen on Apple Podcasts &rarr;</span>
         </a>
 
-        <a class="else-card" href="https://kintsugiheroes.com.au" target="_blank" rel="noopener">
+        <a data-reveal class="else-card" href="https://kintsugiheroes.com.au" target="_blank" rel="noopener">
           <div class="else-tag">Day job &middot; 24h / week</div>
           <h4>Kintsugi Heroes</h4>
           <p>Production Manager at a national not-for-profit podcast network telling stories of people whose cracks became gilded. External role, not my business, named honestly.</p>
           <span class="arrow">kintsugiheroes.com.au &rarr;</span>
         </a>
 
-        <div class="else-card">
+        <div data-reveal class="else-card">
           <div class="else-tag">Social</div>
           <h4>Find me</h4>
           <p>Where most professional conversations start, plus the podcast's home on Instagram and its subscribe page.</p>
@@ -230,18 +237,18 @@
 
   <section>
     <div class="col-wide">
-      <p class="sec-eyebrow">About</p>
-      <h2 class="sec-head">Tony Bailey.</h2>
+      <p data-reveal class="sec-eyebrow">About</p>
+      <h2 data-reveal class="sec-head">Tony Bailey.</h2>
 
       <div class="about-grid">
-        <div class="about-body">
-          <img class="about-photo" src="/tony.jpg" width="480" height="600" loading="lazy" alt="Tony Bailey looking into the camera, black and white portrait">
+        <div data-reveal class="about-body">
+          <img class="about-photo" src="/tony.jpg" width="1024" height="1280" loading="lazy" alt="Tony Bailey looking into the camera, black and white portrait">
           <p>I'm an AI consultant, podcast producer and counsellor-in-training based in Melbourne. I came to this work the long way around: thirty-plus surgeries from a cleft palate, a business that collapsed, ten years of trying to get sober before it stuck, and a late ADHD diagnosis that finally named what was underneath.</p>
           <p>Every system I build now, every policy I write, every consent gate I design into a production platform, is <em>the support structure I didn't have</em> made available to someone else. That's the work. The AI consulting is one surface of it. The counselling, when I'm qualified, is another.</p>
           <p>Bailey Code is a single-operator business by design. Small, considered, honest, and never bigger than I can hold with care.</p>
         </div>
 
-        <div class="about-meta">
+        <div data-reveal class="about-meta">
           <div class="meta-row">
             <span class="meta-lbl">Based</span>
             <span class="meta-val">Melbourne, Australia</span>
@@ -265,9 +272,9 @@
 
   <section id="contact" class="contact">
     <div class="col">
-      <p class="sec-eyebrow">Work together</p>
-      <h2 class="sec-head">If your work matters to <em>real people</em>, let's talk.</h2>
-      <p class="sec-intro">A 30-minute conversation is the fastest way to find out if we're a fit. No sales pitch. If I'm not the right person, I'll say so and point you somewhere better.</p>
+      <p data-reveal class="sec-eyebrow">Work together</p>
+      <h2 data-reveal class="sec-head">If your work matters to <em>real people</em>, let's talk.</h2>
+      <p data-reveal class="sec-intro">A 30-minute conversation is the fastest way to find out if we're a fit. No sales pitch. If I'm not the right person, I'll say so and point you somewhere better.</p>
 
       <div class="contact-ctas">
         <a href="mailto:hello@baileycode.com" class="btn btn-primary">hello@baileycode.com <span class="btn-arrow">&rarr;</span></a>
@@ -285,5 +292,16 @@
   </div>
 </footer>
 
+<script>
+(function(){
+  var rm=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var els=[].slice.call(document.querySelectorAll("[data-reveal]"));
+  if(rm||!("IntersectionObserver" in window)){els.forEach(function(e){e.classList.add("in")});}
+  else{var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}})},{threshold:.12,rootMargin:"0px 0px -6% 0px"});els.forEach(function(e,i){e.style.setProperty("--d",(i%4)*70+"ms");io.observe(e)});}
+  var nav=document.querySelector(".navbar"),bg=document.querySelector(".hero-bg img"),t=false;
+  function f(){t=false;var y=window.scrollY;nav.classList.toggle("scrolled",y>40);if(!rm&&bg&&y<1400){bg.style.transform="translate3d(0,"+(y*0.12)+"px,0) scale("+(1.06+y*0.00004)+")"}}
+  window.addEventListener("scroll",function(){if(!t){t=true;requestAnimationFrame(f)}},{passive:true});f();
+})();
+</script>
 </body>
 </html>
