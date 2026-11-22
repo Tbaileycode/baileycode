@@ -186,3 +186,16 @@ footer{padding:48px var(--gxr) 56px var(--gx);border-top:1px solid var(--rule);b
   .js [data-reveal]{opacity:1;transform:none}
   .hero-bg img{transform:none}
 }
+
+/* podcast feature */
+.pod{margin-top:64px;display:grid;grid-template-columns:1fr;gap:36px;padding:clamp(24px,4vw,48px);background:linear-gradient(160deg,#17130d,#0f0c08);border:1px solid var(--rule-strong);border-radius:6px;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.pod-art{margin:0;max-width:340px}
+.pod-art img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:cover;border-radius:4px;border:1px solid var(--rule-strong)}
+.pod-tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:500}
+.pod h3{margin:14px 0 0;font-weight:400;font-variation-settings:"opsz" 96,"SOFT" 30;font-size:clamp(26px,3.4vw,42px);line-height:1.12;letter-spacing:-0.022em;color:var(--ink)}
+.pod-meta{margin-top:14px;display:flex;gap:18px;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-dim)}
+.pod audio{display:block;width:100%;margin-top:26px;color-scheme:dark;height:44px}
+.pod-links{list-style:none;margin:28px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+.pod-links a{display:inline-block;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;padding:11px 16px;border:1px solid var(--rule-strong);border-radius:2px;color:var(--ink);transition:border-color .2s,color .2s,background .2s}
+.pod-links a:hover{border-color:var(--gold);color:var(--gold-soft);background:rgba(212,168,74,.07)}
+@media(min-width:860px){.pod{grid-template-columns:300px 1fr;gap:56px;align-items:center}}

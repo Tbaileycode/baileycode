@@ -33,7 +33,7 @@
     <div class="navlinks">
       <a href="#services">Services</a>
       <a href="#pattern">About</a>
-      <a href="#elsewhere">Writing</a>
+      <a href="#podcast">Podcast</a>
       <a href="#contact">Contact</a>
     </div>
     <a href="#contact" class="nav-cta">Work with me</a>
@@ -191,6 +191,30 @@
     </div>
   </section>
 
+  <section id="podcast" aria-label="Fall From Grace podcast">
+    <div class="col-wide">
+      <p data-reveal class="sec-eyebrow">The podcast</p>
+      <h2 data-reveal class="sec-head">Fall From Grace, <em>out loud</em>.</h2>
+      <p data-reveal class="sec-intro">My own story of coming apart and rebuilding, told in my own voice. Press play, or find it wherever you listen.</p>
+      <div class="pod" data-reveal>
+        <figure class="pod-art"><img id="pod-img" src="https://hosting-media.riverside.com/media/podcasts/7745f310-ad3e-484d-ab44-87ba6eea1d78/logos/6fa7bb0a-f114-4bcb-bfa1-d0bef697602c.png" width="600" height="600" loading="lazy" alt="Fall From Grace podcast cover art"></figure>
+        <div class="pod-body">
+          <div class="pod-tag">Latest episode</div>
+          <h3 id="pod-title">I'm Not Walking Away Again: Starting Over After Losing Everything (Trailer)</h3>
+          <div class="pod-meta"><span id="pod-date">7 Nov 2026</span><span id="pod-dur">3 min</span></div>
+          <audio id="pod-audio" controls preload="none" src="https://api.riverside.com/hosting-analytics/media/925e197a8f669fe7f8143ac3295f1c107561a80e61137283603ae0a019421478/eyJlcGlzb2RlSWQiOiI1ODI4OTI5Yi0zYWE3LTQ4MjQtYjdjNi05YTdmM2MyNDI0NDkiLCJwb2RjYXN0SWQiOiI3NzQ1ZjMxMC1hZDNlLTQ4NGQtYWI0NC04N2JhNmVlYTFkNzgiLCJhY2NvdW50SWQiOiI2ODZmOGVmYmI1MzI5MDk1MWE4ZTNlYTMiLCJwYXRoIjoibWVkaWEvY2xpcHMvNmFlZjM0ZWEzMTc3MDc3NmRiYzE0M2Y1L3RvbnlzLXN0dWRpby1YVjRLVC0yMDI2LTExLTdfXzE0LTUxLTUubXAzIn0=.mp3">Your browser does not support audio playback.</audio>
+          <ul class="pod-links">
+            <li><a href="https://podcasts.apple.com/au/podcast/fall-from-grace/id6832000792" target="_blank" rel="noopener">Apple Podcasts</a></li>
+            <li><a href="https://open.spotify.com/show/5Iu2I6HhGxleyD1yDbtA5p" target="_blank" rel="noopener">Spotify</a></li>
+            <li><a href="https://www.youtube.com/@fallfromgracepodcast" target="_blank" rel="noopener">YouTube</a></li>
+            <li><a href="https://instagram.com/fallfromgracewithtony" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://fallfromgrace.riverside.com/" target="_blank" rel="noopener">All links</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="elsewhere">
     <div class="col-wide">
       <p data-reveal class="sec-eyebrow">Elsewhere</p>
@@ -206,7 +230,7 @@
           <span class="arrow">Subscribe on LinkedIn &rarr;</span>
         </a>
 
-        <a data-reveal class="else-card" href="https://podcasts.apple.com/us/podcast/fall-from-grace/id1844600278" target="_blank" rel="noopener">
+        <a data-reveal class="else-card" href="https://podcasts.apple.com/au/podcast/fall-from-grace/id6832000792" target="_blank" rel="noopener">
           <div class="else-tag">Podcast</div>
           <h4>Fall From Grace</h4>
           <p>My own story of coming apart and rebuilding, now with the late ADHD diagnosis at the centre. A memoir-in-progress lives alongside it.</p>
@@ -227,6 +251,8 @@
           <ul class="social-list">
             <li><a href="https://www.linkedin.com/in/tonybailey" target="_blank" rel="noopener">LinkedIn <span>/in/tonybailey</span></a></li>
             <li><a href="https://instagram.com/fallfromgracewithtony" target="_blank" rel="noopener">Instagram <span>@fallfromgracewithtony</span></a></li>
+            <li><a href="https://www.youtube.com/@fallfromgracepodcast" target="_blank" rel="noopener">YouTube <span>@fallfromgracepodcast</span></a></li>
+            <li><a href="https://open.spotify.com/show/5Iu2I6HhGxleyD1yDbtA5p" target="_blank" rel="noopener">Spotify <span>Fall From Grace</span></a></li>
             <li><a href="https://fallfromgrace.riverside.com/" target="_blank" rel="noopener">Podcast updates <span>fallfromgrace.riverside.com</span></a></li>
           </ul>
         </div>
@@ -298,6 +324,13 @@
   var els=[].slice.call(document.querySelectorAll("[data-reveal]"));
   if(rm||!("IntersectionObserver" in window)){els.forEach(function(e){e.classList.add("in")});}
   else{var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}})},{threshold:.12,rootMargin:"0px 0px -6% 0px"});els.forEach(function(e,i){e.style.setProperty("--d",(i%4)*70+"ms");io.observe(e)});}
+  var pa=document.getElementById("pod-audio");
+  if(pa&&window.fetch){fetch("/api/latest-episode").then(function(r){return r.ok?r.json():null}).then(function(d){if(!d||!d.audio)return;
+    document.getElementById("pod-title").textContent=d.title;
+    if(d.date){var x=new Date(d.date);if(!isNaN(x))document.getElementById("pod-date").textContent=x.toLocaleDateString("en-AU",{day:"numeric",month:"short",year:"numeric"})}
+    if(d.duration)document.getElementById("pod-dur").textContent=d.duration.replace(/^00:/,"");
+    if(d.image)document.getElementById("pod-img").src=d.image;
+    if(pa.getAttribute("src")!==d.audio)pa.src=d.audio;}).catch(function(){})}
   var nav=document.querySelector(".navbar"),bg=document.querySelector(".hero-bg img"),t=false;
   function f(){t=false;var y=window.scrollY;nav.classList.toggle("scrolled",y>40);if(!rm&&bg&&y<1400){bg.style.transform="translate3d(0,"+(y*0.12)+"px,0) scale("+(1.06+y*0.00004)+")"}}
   window.addEventListener("scroll",function(){if(!t){t=true;requestAnimationFrame(f)}},{passive:true});f();
