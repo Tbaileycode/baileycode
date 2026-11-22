@@ -1,0 +1,17 @@
+# Bailey Code
+
+> Bailey Code is the practice of Tony Bailey in Melbourne, Australia. Two separate services: AI consulting for human services organisations, and counselling and coaching (opening after Tony completes his Masters of Counselling). Both rest on one idea: everyone and every organisation runs on a code, and understanding it is how change begins. Tagline: figuring out the code to finding you.
+
+## Services
+- [AI consulting for human services](https://baileycode.com/ai-consulting): AI audits, written governance, workflow builds and training for disability providers, allied health, aged care and community organisations in Australia.
+- [Counselling and coaching](https://baileycode.com/counselling): Trauma-informed counselling for addiction, recovery, late ADHD diagnosis and trauma. Not yet taking clients; waitlist open.
+
+## Guides
+- [ADHD and addiction: the link, explained](https://baileycode.com/adhd-and-addiction)
+- [NDIS terms in plain English](https://baileycode.com/ndis-plain-english)
+
+## About
+- Founder: Tony Bailey, Melbourne. Graduate Certificate of Counselling (Torrens University Australia), Masters of Counselling in progress.
+- Podcast: Fall From Grace (https://fallfromgrace.riverside.com/)
+- Recovery app in development: https://recoverycode.app (invite only)
+- Contact: hello@baileycode.com

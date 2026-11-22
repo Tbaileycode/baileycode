@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://baileycode.com/</loc></url>
-  <url><loc>https://baileycode.com/privacy</loc></url>
+  <url><loc>https://baileycode.com/</loc><lastmod>2026-11-23</lastmod><priority>1.0</priority></url>
+  <url><loc>https://baileycode.com/ai-consulting</loc><lastmod>2026-11-23</lastmod><priority>0.9</priority></url>
+  <url><loc>https://baileycode.com/counselling</loc><lastmod>2026-11-23</lastmod><priority>0.9</priority></url>
+  <url><loc>https://baileycode.com/adhd-and-addiction</loc><lastmod>2026-11-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://baileycode.com/ndis-plain-english</loc><lastmod>2026-11-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://baileycode.com/privacy</loc><lastmod>2026-11-22</lastmod><priority>0.2</priority></url>
 </urlset>
