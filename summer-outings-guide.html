@@ -1,0 +1,2518 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Melbourne Summer Outings Guide 2026-27 | Bailey Code</title>
+<meta name="description" content="Free and paid summer outings across Melbourne and Geelong for people with disability, families and support workers. Concession prices, Companion Card, sensory-friendly sessions and wheelchair access.">
+<link rel="canonical" href="https://baileycode.com/summer-outings-guide">
+<meta property="og:title" content="Melbourne Summer Outings Guide 2026-27 | Bailey Code">
+<meta property="og:description" content="Free and paid summer outings across Melbourne and Geelong for people with disability, families and support workers. Concession prices, Companion Card, sensory-friendly sessions and wheelchair access.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://baileycode.com/summer-outings-guide">
+<meta property="og:site_name" content="Bailey Code">
+<meta property="og:locale" content="en_AU">
+<meta property="og:image" content="https://baileycode.com/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0d0b08">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark;
+  --bg:#0a0907; --surface:#15120d; --ink:#ecdfc5; --muted:#b3a788; --line:rgba(236,223,197,.14);
+  --sea:#d4a84a; --sea-soft:rgba(212,168,74,.14); --sun:#e8c576; --sun-soft:rgba(212,168,74,.12);
+  --display:"Fraunces","Georgia",serif; --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+  --body:"Atkinson Hyperlegible",Verdana,system-ui,sans-serif;
+  --r:4px; --shadow:none;
+}
+
+/* Layout idea: a field guide. Sticky rail of sections on the left, one long readable column on the right,
+   opened by a season strip (21 Nov to 28 Feb) that works as the page's map of the summer. */
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:120px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--body);-webkit-text-size-adjust:100%}
+a{color:var(--sea);text-underline-offset:3px;text-decoration-thickness:1px}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:3px solid var(--sun);outline-offset:2px;border-radius:6px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0}
+
+/* top bar */
+.bar{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar-in{max-width:1240px;margin:0 auto;padding:10px 20px;display:flex;gap:14px;align-items:center}
+.brand{font:800 18px/1 var(--display);letter-spacing:-.01em;white-space:nowrap;color:var(--ink);text-decoration:none;display:flex;align-items:center;gap:10px}
+.brand i{width:16px;height:16px;border-radius:50%;background:var(--sun);display:block;box-shadow:0 0 0 4px var(--sun-soft)}
+.search{flex:1;display:flex;justify-content:flex-end}
+.search input{width:min(420px,100%);font:400 16px/1 var(--body);padding:11px 16px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink)}
+.search input::placeholder{color:var(--muted)}
+.chipsnav{display:none;gap:8px;overflow-x:auto;padding:0 16px 10px;scrollbar-width:none}
+.chipsnav::-webkit-scrollbar{display:none}
+.chipsnav a{flex:none;font-size:14px;padding:7px 13px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);text-decoration:none}
+.chipsnav a.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+
+/* hero */
+.hero{max-width:1240px;margin:0 auto;padding:56px 20px 28px;position:relative}
+.kicker{font:700 13px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--sea);margin:0 0 18px}
+h1{font-weight:800;font-size:clamp(42px,8.4vw,112px);line-height:.92;letter-spacing:-.035em;max-width:11ch}
+h1 em{font-style:normal;background:linear-gradient(var(--sun),var(--sun)) 0 88%/100% .16em no-repeat}
+.lede{max-width:62ch;font-size:19px;color:var(--muted);margin:26px 0 0}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:34px 0 0}
+.fact{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px}
+.fact b{display:block;font:800 30px/1 var(--display);letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.fact span{display:block;margin-top:6px;font-size:15px;color:var(--muted);line-height:1.35}
+
+/* season strip */
+.season{margin:34px 0 0;background:var(--ink);color:var(--bg);border-radius:20px;padding:22px 22px 18px}
+.season h2{font-size:15px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-family:var(--body);opacity:.75}
+.months{display:grid;grid-template-columns:10fr 31fr 31fr 28fr;margin:14px 0 6px;font:700 14px/1 var(--display);font-variant-numeric:tabular-nums}
+.months span{border-left:1px solid color-mix(in srgb,var(--bg) 30%,transparent);padding:0 0 6px 8px}
+.ev{display:grid;grid-template-columns:210px 1fr;gap:12px;align-items:center;padding:5px 0;font-size:15px}
+.ev .tr{position:relative;height:12px;border-radius:6px;background:color-mix(in srgb,var(--bg) 10%,transparent)}
+.ev .tr i{position:absolute;top:0;bottom:0;border-radius:6px;background:var(--sun);min-width:8px}
+.ev small{display:block;opacity:.7;font-size:13px}
+
+/* layout */
+.wrap{max-width:1240px;margin:0 auto;padding:24px 20px 80px;display:grid;grid-template-columns:240px minmax(0,1fr);gap:48px}
+.rail{position:sticky;top:76px;align-self:start;max-height:calc(100vh - 96px);overflow:auto;padding:4px 4px 20px 0}
+.navgroup p{font:700 12px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:20px 0 8px}
+.navgroup a{display:block;padding:6px 12px;border-left:2px solid var(--line);color:var(--ink);text-decoration:none;font-size:16px;line-height:1.3}
+.navgroup a:hover{border-color:var(--sea)}
+.navgroup a.on{border-color:var(--sun);font-weight:700;background:var(--sun-soft)}
+main{min-width:0}
+.note{background:var(--sun-soft);border:1px solid color-mix(in srgb,var(--sun) 45%,transparent);border-radius:var(--r);padding:14px 18px;font-size:16px;margin:0 0 8px}
+#status{color:var(--muted);font-size:15px;min-height:1.6em;margin:6px 0 0}
+
+section{padding:44px 0 8px;border-top:1px solid var(--line);margin-top:36px}
+section:first-of-type{border-top:0;margin-top:0;padding-top:20px}
+.eyebrow{font:700 12px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--sea);margin:0 0 10px}
+h2{font-weight:800;font-size:clamp(28px,4vw,44px);line-height:1.02;letter-spacing:-.025em;margin-bottom:18px}
+h3{font-weight:700;font-size:21px;letter-spacing:-.01em;margin:30px 0 12px}
+section p{max-width:68ch;margin:0 0 14px}
+section ul{padding:0;margin:0 0 14px;list-style:none;display:grid;gap:8px;max-width:78ch}
+section li{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 16px}
+section li p{margin:0}
+
+/* top picks become cards */
+#top-picks ul{grid-template-columns:repeat(auto-fill,minmax(250px,1fr));max-width:none;gap:12px}
+#top-picks li{padding:18px;box-shadow:var(--shadow);border-top:4px solid var(--sun)}
+#top-picks li strong{display:block;font:700 19px/1.2 var(--display);margin-bottom:6px}
+
+/* tables */
+.tablewrap{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);margin:0 0 16px}
+table{border-collapse:collapse;width:100%;font-size:15.5px;line-height:1.45}
+th{font:700 12px/1.2 var(--body);letter-spacing:.1em;text-transform:uppercase;text-align:left;color:var(--muted);padding:14px 16px;border-bottom:1px solid var(--line);white-space:nowrap;background:color-mix(in srgb,var(--bg) 60%,var(--surface))}
+td{padding:14px 16px;border-bottom:1px solid var(--line);vertical-align:top;font-variant-numeric:tabular-nums}
+tr:last-child td{border-bottom:0}
+td:first-child{font-weight:700;min-width:130px}
+td:last-child{min-width:240px;color:var(--muted)}
+.pill{display:inline-block;justify-self:start;background:var(--sea-soft);color:var(--sea);font-weight:700;font-size:13px;padding:3px 10px;border-radius:999px;white-space:nowrap}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 14px}
+.chip{font:400 15px/1 var(--body);padding:9px 15px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+#freeOnly[aria-pressed="true"]{background:var(--sea);border-color:var(--sea);color:var(--surface)}
+.areas{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:0 0 14px}
+.areas span{font:700 12px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-right:4px}
+.areas a{font-size:15px;padding:8px 14px;border-radius:999px;background:var(--ink);color:var(--bg);text-decoration:none}
+.areas a:hover{background:var(--sea);color:var(--surface)}
+.hp{display:none!important}
+@media print{.bar,.rail,.areas,.filters,#status,.season{display:none!important}.wrap{display:block;padding:0}body{background:#fff;color:#000;font-size:11pt}section{break-inside:auto;margin-top:12pt;padding-top:12pt}.tablewrap{box-shadow:none;overflow:visible}tr,li{break-inside:avoid}.hq,.hm,.hf,.hp{display:revert!important}a{color:#000}h1{font-size:28pt}}
+.hq,.hm,.hf{display:none!important}
+footer{max-width:1240px;margin:0 auto;padding:28px 20px 60px;border-top:1px solid var(--line);color:var(--muted);font-size:15px}
+footer p{max-width:70ch;margin:0 0 8px}
+
+@media (max-width:980px){
+  .wrap{grid-template-columns:1fr;gap:0;padding-top:8px}
+  .rail{display:none}
+  .chipsnav{display:flex}
+  .facts{grid-template-columns:repeat(2,1fr)}
+  html{scroll-padding-top:128px}
+}
+@media (max-width:720px){
+  body{font-size:16.5px}
+  .hero{padding-top:34px}
+  .brand span{display:none}
+  .ev{grid-template-columns:1fr;gap:4px;padding:8px 0}
+  .season{padding:18px 16px 12px}
+  /* tables become stacked cards */
+  .tablewrap{overflow:visible;background:none;border:0;box-shadow:none}
+  table,tbody,tr,td{display:block;width:100%}
+  thead{display:none}
+  tr{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:14px 16px;margin-bottom:10px}
+  td{padding:0;border:0;min-width:0!important}
+  td.empty{display:none}
+  td:first-child{font:700 13px/1.3 var(--body);letter-spacing:.06em;text-transform:uppercase;color:var(--sea);margin-bottom:4px}
+  td:nth-child(2){font:700 19px/1.25 var(--display);margin-bottom:8px}
+  td:nth-child(n+3){display:grid;grid-template-columns:104px 1fr;gap:10px;padding:5px 0;border-top:1px solid var(--line);color:var(--ink)}
+  td:nth-child(n+3)::before{content:attr(data-label);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding-top:3px}
+}
+
+/* Bailey Code branding */
+::selection{background:#d4a84a;color:#0a0907}
+body{font-feature-settings:"tnum" 1}
+h1,h2,h3{font-variation-settings:"opsz" 120,"SOFT" 30;font-weight:400;letter-spacing:-.03em}
+h1{font-weight:300;line-height:.98}
+h1 em{font-style:italic;color:var(--sun);background:none}
+h2{font-weight:400}
+h3{font-weight:500}
+.kicker,.eyebrow,th,.navgroup p,.areas span{font-family:var(--mono);letter-spacing:.2em;font-weight:500}
+.kicker,.eyebrow{color:var(--sea)}
+.fact b{font-weight:400;font-variation-settings:"opsz" 72}
+.fact,.tablewrap,section li,.note{border-radius:2px}
+.bar{background:rgba(10,9,7,.86)}
+.brand{font-family:var(--display);font-weight:600;font-size:19px;letter-spacing:-.015em;gap:0;display:inline-flex;align-items:baseline}
+.brand b{color:var(--sea);font-weight:600}
+.sub{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+@media(max-width:560px){.sub{display:none}}
+.season{background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:2px}
+.season h2{font-family:var(--mono);opacity:1;color:var(--sea);letter-spacing:.2em}
+.months span{border-left-color:var(--line)}
+.ev .tr{background:rgba(236,223,197,.08)}
+.ev .tr i{background:var(--sea)}
+.chip,.areas a,.chipsnav a{border-radius:2px;font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+.areas a{background:transparent;border:1px solid var(--line);color:var(--ink)}
+.areas a:hover{border-color:var(--sea);color:var(--sun);background:transparent}
+.chip[aria-pressed="true"],.chipsnav a.on{background:var(--sea);color:#0a0907;border-color:var(--sea)}
+#freeOnly[aria-pressed="true"]{background:var(--sun);border-color:var(--sun);color:#0a0907}
+.pill{border-radius:2px}
+.search input{border-radius:2px}
+.navgroup a.on{border-color:var(--sea);color:var(--sun)}
+#top-picks li{border-top-color:var(--sea)}
+th{background:rgba(236,223,197,.04)}
+footer.bc{max-width:1240px;margin:0 auto;padding:40px 20px 60px;border-top:1px solid var(--line);color:var(--muted);font-size:15px}
+footer.bc p{max-width:70ch;margin:0 0 8px}
+footer.bc .fm{margin-top:24px;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+footer.bc .fm a{text-decoration:underline;text-underline-offset:3px}
+@media print{body{background:#fff}.sub,.brand b{color:#000}}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "ProfessionalService", "@id": "https://baileycode.com/#org", "name": "Bailey Code", "url": "https://baileycode.com/", "logo": "https://baileycode.com/favicon.svg", "founder": {"@id": "https://baileycode.com/#tony"}}, {"@type": "Person", "@id": "https://baileycode.com/#tony", "name": "Tony Bailey", "url": "https://baileycode.com/", "image": "https://baileycode.com/tony.jpg", "jobTitle": "Founder, Bailey Code", "worksFor": {"@id": "https://baileycode.com/#org"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Bailey Code", "item": "https://baileycode.com/"}, {"@type": "ListItem", "position": 2, "name": "Summer outings guide", "item": "https://baileycode.com/summer-outings-guide"}]}, {"@type": "Article", "@id": "https://baileycode.com/summer-outings-guide#article", "headline": "Melbourne Summer Outings Guide 2026-27", "description": "Free and paid summer outings across Melbourne and Geelong for people with disability, families and support workers. Concession prices, Companion Card, sensory-friendly sessions and wheelchair access.", "author": {"@id": "https://baileycode.com/#tony"}, "publisher": {"@id": "https://baileycode.com/#org"}, "datePublished": "2026-11-18", "dateModified": "2026-11-23", "mainEntityOfPage": "https://baileycode.com/summer-outings-guide", "image": "https://baileycode.com/og.jpg", "inLanguage": "en-AU", "audience": {"@type": "Audience", "audienceType": "People with disability, families, carers and support workers"}, "spatialCoverage": {"@type": "Place", "name": "Melbourne and Geelong, Victoria, Australia"}}]}</script>
+</head>
+<body class="guide">
+<div class="bar">
+  <div class="bar-in">
+    <a class="brand" href="/">Bailey<b>Code</b></a><span class="sub">Summer Outings Guide</span>
+    <div class="search"><input id="q" type="search" placeholder="Search events, venues, suburbs" aria-label="Search the guide" autocomplete="off"></div>
+  </div>
+  <nav class="chipsnav" aria-label="Sections"><a href="#top-picks">Top picks</a><a href="#calendar">Calendar</a><a href="#prices">Prices and Companion Card</a><a href="#deals">Offers and deals</a><a href="#free">Free all summer</a><a href="#sensory">Sensory-friendly</a><a href="#autism-adhd">Autism and ADHD</a><a href="#wheelchair">Wheelchair access</a><a href="#pools">Accessible pools</a><a href="#festivals">Festivals</a><a href="#expos">Expos and fan events</a><a href="#sport">Sport</a><a href="#film">Film and IMAX</a><a href="#museums">Museums and galleries</a><a href="#interests">By interest</a><a href="#regulars">Low-cost and adults</a><a href="#nye-cinemas">NYE and outdoor cinemas</a><a href="#east">Eastern suburbs</a><a href="#geelong">Geelong and coast</a><a href="#more-melbourne">More across Melbourne</a><a href="#more-areas">North, west, south-east</a><a href="#yarra-dandenongs">Yarra Valley, Dandenongs</a><a href="#hot-days">Hot days</a><a href="#transport">Transport</a><a href="#food-relief">Christmas food relief</a><a href="#workers">For support workers</a><a href="#families">For participants and families</a><a href="#sources">Sources and gaps</a></nav>
+</div>
+<header class="hero" id="top">
+  <p class="kicker">Melbourne and Geelong · Summer 2026-27</p>
+  <h1>Summer outings, <em>open to everyone.</em></h1>
+  <p class="lede">Free and paid events and activities across Melbourne and Geelong from late November 2026 to the end of February 2027, chosen for people with disability, their families and the support workers going with them. Prices show adult and concession rates and whether a Companion Card gets the support worker in free. Prices and dates were checked on 18 November 2026 and can change, so confirm on the linked site before booking.</p>
+  <div class="facts">
+    <div class="fact"><b>25</b><span>dated events in the calendar, late November to the end of February</span></div>
+    <div class="fact"><b>$0</b><span>general entry at Melbourne Museum and Scienceworks with a concession card</span></div>
+    <div class="fact"><b>8</b><span>major venues confirmed as accepting the Companion Card</span></div>
+    <div class="fact"><b>18 Nov</b><span>2026, the date prices and dates were last checked</span></div>
+  </div>
+  <div class="season" aria-label="The season at a glance">
+    <h2>The season at a glance</h2>
+    <div class="ev" aria-hidden="true"><span></span><div class="months"><span>Nov</span><span>Dec</span><span>Jan</span><span>Feb</span></div></div>
+    <div class="ev"><span>Melbourne's Christmas Festival<small>27 Nov to 25 Dec, free</small></span><div class="tr"><i style="left:6%;width:28%"></i></div></div>
+    <div class="ev"><span>NGV Triennial<small>From 13 Dec, free</small></span><div class="tr"><i style="left:22%;width:78%"></i></div></div>
+    <div class="ev"><span>Australian Open<small>11 to 31 Jan</small></span><div class="tr"><i style="left:51%;width:20%"></i></div></div>
+    <div class="ev"><span>Midsumma Carnival<small>17 Jan, free</small></span><div class="tr"><i style="left:57%;width:1%"></i></div></div>
+    <div class="ev"><span>Sidney Myer Free Concerts<small>12, 13 and 19 Feb</small></span><div class="tr"><i style="left:83%;width:2%"></i><i style="left:90%;width:1%"></i></div></div>
+    <div class="ev"><span>St Kilda Festival<small>20 and 21 Feb, free</small></span><div class="tr"><i style="left:91%;width:2%"></i></div></div>
+    <div class="ev"><span>Pako Festa, Geelong<small>27 Feb, free</small></span><div class="tr"><i style="left:98%;width:1%"></i></div></div>
+  </div>
+</header>
+<div class="wrap">
+  <nav class="rail" aria-label="Sections"><div class="navgroup"><p>Start here</p><a href="#top-picks">Top picks</a><a href="#calendar">Calendar</a></div><div class="navgroup"><p>Costs</p><a href="#prices">Prices and Companion Card</a><a href="#deals">Offers and deals</a><a href="#free">Free all summer</a></div><div class="navgroup"><p>Access</p><a href="#sensory">Sensory-friendly</a><a href="#autism-adhd">Autism and ADHD</a><a href="#wheelchair">Wheelchair access</a><a href="#pools">Accessible pools</a></div><div class="navgroup"><p>What&#x27;s on</p><a href="#festivals">Festivals</a><a href="#expos">Expos and fan events</a><a href="#sport">Sport</a><a href="#film">Film and IMAX</a><a href="#museums">Museums and galleries</a><a href="#interests">By interest</a><a href="#regulars">Low-cost and adults</a><a href="#nye-cinemas">NYE and outdoor cinemas</a></div><div class="navgroup"><p>By area</p><a href="#east">Eastern suburbs</a><a href="#geelong">Geelong and coast</a><a href="#more-melbourne">More across Melbourne</a><a href="#more-areas">North, west, south-east</a><a href="#yarra-dandenongs">Yarra Valley, Dandenongs</a></div><div class="navgroup"><p>Planning</p><a href="#hot-days">Hot days</a><a href="#transport">Transport</a></div><div class="navgroup"><p>Support</p><a href="#food-relief">Christmas food relief</a><a href="#workers">For support workers</a><a href="#families">For participants and families</a><a href="#sources">Sources and gaps</a></div></nav>
+  <main>
+    <nav class="areas" aria-label="Browse by area"><span>Browse by area</span>
+<a href="#top-picks">City</a><a href="#east">East</a><a href="#more-areas-northern-suburbs">North</a><a href="#more-areas-western-suburbs">West</a><a href="#more-areas-south-east-and-bayside">South-east</a><a href="#yarra-dandenongs">Yarra Valley and Dandenongs</a><a href="#more-areas-mornington-peninsula-and-phillip-island">Peninsula</a><a href="#geelong">Geelong</a></nav>
+    <p class="note"><strong>Before you book:</strong> prices, dates and access details can change. Confirm on the linked site or phone the venue first.</p>
+    <p id="status" role="status" aria-live="polite"></p>
+    <section id="top-picks" data-group="Start here"><p class="eyebrow">Start here</p><h2>Top picks</h2><p>Most concession card holders get into Melbourne Museum and Scienceworks free, and the NGV Triennial is free for everyone, so a strong summer program can be built at little or no cost.</p>
+<h3 id="top-picks-best-free">Best free</h3>
+<ul>
+<li><strong>NGV Triennial</strong>NGV International, 13 Dec 2026 to 11 Apr 2027. Free, air-conditioned, good on hot days.</li>
+<li><strong>Melbourne's Christmas Festival</strong>CBD, 27 Nov to 25 Dec. Free lights, Christmas Square at Fed Square and Town Hall projections.</li>
+<li><strong>Melbourne Museum and Scienceworks</strong>Free general entry with a concession card.</li>
+<li><strong>Sidney Myer Free Concerts</strong>(MSO), Sidney Myer Music Bowl, 12, 13 and 19 Feb 2027.</li>
+<li><strong>St Kilda Festival</strong>20 and 21 Feb 2027.</li>
+<li><strong>Midsumma Carnival</strong>Alexandra Gardens, 17 Jan 2027.</li>
+<li><strong>Accessible beaches</strong>With matting and free beach wheelchairs: St Kilda, Port Melbourne, Williamstown, Altona.</li>
+</ul>
+<h3 id="top-picks-best-paid-value">Best paid value</h3>
+<ul>
+<li><strong>Village Cinemas Sensory Friendly Films</strong>$6 for members, $7.50 for non-members.</li>
+<li><strong>Australian Open Opening Week</strong>11 to 16 Jan 2027: adults from $10.</li>
+<li><strong>Zoos Victoria</strong>(Melbourne, Werribee, Healesville): concession from $44, adult from $58.</li>
+<li><strong>SEA LIFE Melbourne Aquarium</strong>Concession from about $32 to $34 online on weekdays, carer free with Companion Card.</li>
+<li><strong>Puffing Billy</strong>Concession fare for the participant, companion travels free on daily excursion trains.</li>
+</ul></section>
+<section id="calendar" data-group="Start here"><p class="eyebrow">Start here</p><h2>Dated events calendar</h2><p>Events with fixed dates, in date order. "Check" means the detail was not confirmed on an official page.</p>
+<div class="filters" role="group" aria-label="Filter the calendar"><button type="button" class="chip" data-month="all" aria-pressed="true">All</button><button type="button" class="chip" data-month="Nov" aria-pressed="false">November</button><button type="button" class="chip" data-month="Dec" aria-pressed="false">December</button><button type="button" class="chip" data-month="Jan" aria-pressed="false">January</button><button type="button" class="chip" data-month="Feb" aria-pressed="false">February</button><button type="button" class="chip" id="freeOnly" aria-pressed="false">Free only</button><button type="button" class="chip" id="showPast" aria-pressed="false">Show past events</button></div><div class="tablewrap"><table>
+<thead>
+<tr>
+<th>When</th>
+<th>Event</th>
+<th>Where</th>
+<th>Adult</th>
+<th>Concession</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="
+
+When">7 Nov to 5 Jan</td>
+<td data-label="Event"><a target="_blank" rel="noopener" href="https://thesebelmooneeponds.com.au/christmas-in-melbourne-guide/">Myer Christmas Windows</a></td>
+<td data-label="Where">Bourke St Mall, CBD</td>
+<td data-label="Adult"><span class="pill">Free</span></td>
+<td data-label="Concession"><span class="pill">Free</span></td>
+<td data-label="Notes">Flat footpath viewing. Quieter on weekday mornings.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">Fri 27 Nov, 6 to 9pm</td>
+<td data-label="Event"><a target="_blank" rel="noopener" href="https://www.melbourneplaygrounds.com.au/free-christmas-events-in-melbourne">Christmas tree lighting</a></td>
+<td data-label="Where">Fed Square</td>
+<td data-label="Adult"><span class="pill">Free</span></td>
+<td data-label="Concession"><span class="pill">Free</span></td>
+<td data-label="Notes">Busy and loud. Arrive early for space.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">27 Nov to 25 Dec</td>
+<td data-label="Event"><a target="_blank" rel="noopener" href="https://tothotornot.com/melbourne-christmas-lights/">Melbourne's Christmas Festival and Christmas Square</a></td>
+<td data-label="Where">Fed Square and CBD</td>
+<td data-label="Adult"><span class="pill">Free</span></td>
+<td data-label="Concession"><span class="pill">Free</span></td>
+<td data-label="Notes">No booking. Town Hall projections 9 to 11pm from 4 Dec. The Christmas Magic Mirror at Southgate is listed as relaxed and low sensory.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">2 Dec to 11 Apr</td>
+<td data-label="Event"><a target="_blank" rel="noopener" href="https://melbourne.moonlight.com.au/faq">Moonlight Cinema</a></td>
+<td data-label="Where">Royal Botanic Gardens, Central Lawn</td>
+<td data-label="Adult">One price</td>
+<td data-label="Concession">No concession</td>
+<td data-label="Notes">One ticket price for all ages. Evening lawn seating. A carer with a Companion Card gets free general admission.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">Fri 4 Dec, 5 to 7pm</td>
+<td data-label="Event"><a target="_blank" rel="noopener" href="https://aaaplay.org.au/events/2026/12/melbourne-victoria-celebrates-international-day-of-people-with-a-disability/">Melbourne Victory inclusive football event</a></td>
+<td data-label="Where">AAMI Park</td>
+<td data-label="Adult"><span class="pill">Free</span></td>
+<td data-label="Concession"><span class="pill">Free</span></td>
+<td data-label="Notes">For people of all ages with disability. Skills, stadium tour, meet players. Marks International Day of People with Disability (3 Dec).</td>
+</tr>
+<tr>
+<td data-label="
+
+When">Sat 5 Dec, 12:30pm</td>
+<td data-label="Event"><a target="_blank" rel="noopener" href="https://www.mso.com.au/performance/2026-classic-kids-christmas">MSO Classic Kids: Christmas, relaxed performance</a></td>
+<td data-label="Where">Hamer Hall</td>
+<td data-label="Adult">$35</td>
+<td data-label="Concession">$35 (one price)</td>
+<td data-label="Notes">Relaxed session: lights on low, movement and noise welcome, visual story sent ahead.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">Sat 5 Dec, 5:30 to 9:15pm</td>
+<td data-label="Event"><a target="_blank" rel="noopener" href="https://www.monash.vic.gov.au/Things-to-Do/Festivals-and-Events/Monash-Carols-by-Candlelight-2025">Monash Carols by Candlelight</a></td>
+<td data-label="Where">Jells Park, Wheelers Hill</td>
+<td data-label="Adult"><span class="pill">Free</span></td>
+<td data-label="Concession"><span class="pill">Free</span></td>
+<td data-label="Notes">Picnic style.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">Fri 11 Dec, 6 to 10pm</td>
+<td data-label="Event"><a target="_blank" rel="noopener" href="https://www.manningham.vic.gov.au/events/manningham-carols-candlelight-2026">Manningham Carols by Candlelight</a></td>
+<td data-label="Where">Ruffey Lake Park, Doncaster</td>
+<td data-label="Adult"><span class="pill">Free</span></td>
+<td data-label="Concession"><span class="pill">Free</span></td>
+<td data-label="Notes">Free but ticketed. Register online.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">11 to 24 Dec</td>
+<td data-label="Event"><a target="_blank" rel="noopener" href="https://thesebelmooneeponds.com.au/christmas-in-melbourne-guide/">Christmas Carnival</a></td>
+<td data-label="Where">Birrarung Marr, CBD</td>
+<td data-label="Adult"><span class="pill">Free entry</span></td>
+<td data-label="Concession"><span class="pill">Free entry</span></td>
+<td data-label="Notes">Rides and food cost extra. Check dates.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">Sat 12 Dec, 6:30 to 9:15pm</td>
+<td data-label="Event"><a target="_blank" rel="noopener" href="https://aprd.boroondara.vic.gov.au/events/carols-park-2026">Carols in the Park</a></td>
+<td data-label="Where">Macleay Park, North Balwyn</td>
+<td data-label="Adult"><span class="pill">Free</span></td>
+<td data-label="Concession"><span class="pill">Free</span></td>
+<td data-label="Notes">Fireworks at the end, so plan for noise.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">13 Dec to 11 Apr</td>
+<td data-label="Event"><a target="_blank" rel="noopener" href="https://www.ngv.vic.gov.au/">NGV Triennial</a></td>
+<td data-label="Where">NGV International, St Kilda Rd</td>
+<td data-label="Adult"><span class="pill">Free</span></td>
+<td data-label="Concession"><span class="pill">Free</span></td>
+<td data-label="Notes">Whole-gallery exhibition. Air-conditioned.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">Sat 19 Dec</td>
+<td data-label="Event"><a target="_blank" rel="noopener" href="https://www.creativewhitehorse.vic.gov.au/carols">Whitehorse Carols</a></td>
+<td data-label="Where">Whitehorse Civic Centre precinct, Nunawading</td>
+<td data-label="Adult"><span class="pill">Free</span></td>
+<td data-label="Concession"><span class="pill">Free</span></td>
+<td data-label="Notes">Activities from 5:30pm, performances 6:30 to 9:30pm. No booking. Auslan on stage, quiet space, accessible viewing area and Changing Places at The Round.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">26 to 30 Dec, 10:30am</td>
+<td data-label="Event"><a target="_blank" rel="noopener" href="https://www.mcg.org.au/events/2026/december/boxing-day-test-day-1-australia-v-new-zealand">Boxing Day Test, Australia v New Zealand</a></td>
+<td data-label="Where">MCG</td>
+<td data-label="Adult">Check Ticketek</td>
+<td data-label="Concession">Check Ticketek</td>
+<td data-label="Notes">Public prices are only shown on Ticketek. Gate 3B is the accessible entry, and a free mobility shuttle runs from Richmond and Jolimont stations. Days 3 and 4 are quieter than Day 1.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">Thu 31 Dec</td>
+<td data-label="Event"><a target="_blank" rel="noopener" href="https://whatson.melbourne.vic.gov.au/things-to-do/new-years-eve">New Year's Eve Celebration Zones</a></td>
+<td data-label="Where">City of Melbourne parks</td>
+<td data-label="Adult"><span class="pill">Free</span></td>
+<td data-label="Concession"><span class="pill">Free</span></td>
+<td data-label="Notes">The City of Melbourne had not published 2026 zones or fireworks times when checked on 18 Nov. Past years had alcohol-free family zones and an early fireworks show.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">Wednesdays 6 Jan to 10 Mar, 5 to 10pm</td>
+<td data-label="Event"><a target="_blank" rel="noopener" href="https://cdn.qvm.com.au/wp-content/uploads/2026/08/QVM_Summer-Night-Market-Info-Pack_2027.pdf">Queen Vic Market Summer Night Market</a></td>
+<td data-label="Where">Queen Victoria Market</td>
+<td data-label="Adult"><span class="pill">Free entry</span></td>
+<td data-label="Concession"><span class="pill">Free entry</span></td>
+<td data-label="Notes">Dates are from the trader pack. Check the public listing. Crowded after 6:30pm.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">11 to 16 Jan</td>
+<td data-label="Event"><a target="_blank" rel="noopener" href="https://www.melbournepark.com.au/news/australian-open-2027-your-ultimate-guide/">Australian Open Opening Week</a></td>
+<td data-label="Where">Melbourne Park</td>
+<td data-label="Adult">From $10</td>
+<td data-label="Concession">Check Ticketmaster</td>
+<td data-label="Notes">Cheapest way to see the tennis. Child $5.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">17 to 31 Jan</td>
+<td data-label="Event"><a target="_blank" rel="noopener" href="https://www.melbournepark.com.au/news/australian-open-2027-your-ultimate-guide/">Australian Open main draw, Ground Pass</a></td>
+<td data-label="Where">Melbourne Park</td>
+<td data-label="Adult">From $49</td>
+<td data-label="Concession">Check Ticketmaster</td>
+<td data-label="Notes">Early bird price ends 12:59pm on 30 Nov. Daily Ground Passes are capped this year, so book ahead.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">Sun 17 Jan, 11am to 9pm</td>
+<td data-label="Event"><a target="_blank" rel="noopener" href="https://beat.com.au/three-melbourne-street-parties-are-set-to-draw-over-200000-people-this-summer/">Midsumma Carnival</a></td>
+<td data-label="Where">Alexandra Gardens</td>
+<td data-label="Adult"><span class="pill">Free</span></td>
+<td data-label="Concession"><span class="pill">Free</span></td>
+<td data-label="Notes">Full Midsumma program is released 24 Nov.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">Until 31 Jan</td>
+<td data-label="Event"><a target="_blank" rel="noopener" href="https://www.ngv.vic.gov.au/margaret-preston-exhibition-access-guide/">Margaret Preston exhibition</a></td>
+<td data-label="Where">NGV Australia, Fed Square</td>
+<td data-label="Adult">$35</td>
+<td data-label="Concession">$33</td>
+<td data-label="Notes">NGV publishes an access guide for this show.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">Sun 31 Jan, from 10:30am</td>
+<td data-label="Event"><a target="_blank" rel="noopener" href="https://beat.com.au/three-melbourne-street-parties-are-set-to-draw-over-200000-people-this-summer/">Midsumma Pride March</a></td>
+<td data-label="Where">Fitzroy St, St Kilda</td>
+<td data-label="Adult"><span class="pill">Free</span></td>
+<td data-label="Concession"><span class="pill">Free</span></td>
+<td data-label="Notes">Large crowds.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">Sun 7 Feb</td>
+<td data-label="Event"><a target="_blank" rel="noopener" href="https://beat.com.au/three-melbourne-street-parties-are-set-to-draw-over-200000-people-this-summer/">Victoria's Pride Street Party</a></td>
+<td data-label="Where">Gertrude and Smith Sts, Fitzroy</td>
+<td data-label="Adult"><span class="pill">Free</span></td>
+<td data-label="Concession"><span class="pill">Free</span></td>
+<td data-label="Notes">Closes Midsumma.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">Sun 7 Feb, 10am to 9pm</td>
+<td data-label="Event"><a target="_blank" rel="noopener" href="https://melbournelunarnewyear.com.au/">Chinatown Lunar New Year Festival</a></td>
+<td data-label="Where">Little Bourke St, CBD</td>
+<td data-label="Adult"><span class="pill">Free</span></td>
+<td data-label="Concession"><span class="pill">Free</span></td>
+<td data-label="Notes">Year of the Goat begins 6 Feb. Firecrackers and drums are loud. Date confirmed on the festival site.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">Fri 12, Sat 13, Fri 19 Feb, 7:30pm</td>
+<td data-label="Event"><a target="_blank" rel="noopener" href="https://www.mso.com.au/performance/2027-smmb-under-the-canopy">Sidney Myer Free Concerts (MSO)</a></td>
+<td data-label="Where">Sidney Myer Music Bowl</td>
+<td data-label="Adult"><span class="pill">Free</span></td>
+<td data-label="Concession"><span class="pill">Free</span></td>
+<td data-label="Notes">No booking. Gates 5:30pm, first in.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">Sat 13 Feb, 10am to 11pm</td>
+<td data-label="Event"><a target="_blank" rel="noopener" href="https://boxhillfestival.com.au/">Box Hill Chinese New Year Festival</a></td>
+<td data-label="Where">Box Hill</td>
+<td data-label="Adult"><span class="pill">Free</span></td>
+<td data-label="Concession"><span class="pill">Free</span></td>
+<td data-label="Notes">Local for the east. Go in the morning for smaller crowds.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">Sat 20 and Sun 21 Feb</td>
+<td data-label="Event"><a target="_blank" rel="noopener" href="https://www.stkildafestival.com.au/">St Kilda Festival</a></td>
+<td data-label="Where">St Kilda foreshore</td>
+<td data-label="Adult"><span class="pill">Free</span></td>
+<td data-label="Concession"><span class="pill">Free</span></td>
+<td data-label="Notes">Saturday (First Peoples First) is the calmer day. Sunday is very large.</td>
+</tr>
+</tbody>
+</table></div></section>
+<section id="prices" data-group="Costs"><p class="eyebrow">Costs</p><h2>Paid attractions: adult, concession and Companion Card</h2><p>Melbourne Museum and Scienceworks are free with a concession card, which makes them the best-value paid venues on this list. "From" prices move with the date and how early you book.</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Venue</th>
+<th>Adult</th>
+<th>Concession</th>
+<th>Companion Card</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="
+
+Venue"><a target="_blank" rel="noopener" href="https://museumsvictoria.com.au/melbournemuseum/plan-your-visit">Melbourne Museum</a></td>
+<td data-label="Adult">$18</td>
+<td data-label="Concession"><span class="pill">Free</span></td>
+<td data-label="Companion Card">Attendant free</td>
+<td data-label="Notes">Senior $12. Concession covers Carer Card, Health Care Card, Pension Card, Student Card and Veterans Affairs Card. Closed Christmas Day. Special exhibitions cost extra.</td>
+</tr>
+<tr>
+<td data-label="
+
+Venue"><a target="_blank" rel="noopener" href="https://museumsvictoria.com.au/melbournemuseum/whats-on/barbie-the-exhibition/">Barbie: The Exhibition</a>, Melbourne Museum</td>
+<td data-label="Adult">$30</td>
+<td data-label="Concession">$25</td>
+<td data-label="Companion Card">Attendant free (museum policy)</td>
+<td data-label="Notes">Child $20. Includes museum entry. From 28 Nov.</td>
+</tr>
+<tr>
+<td data-label="
+
+Venue"><a target="_blank" rel="noopener" href="https://museumsvictoria.com.au/scienceworks/tickets/">Scienceworks</a></td>
+<td data-label="Adult">$15</td>
+<td data-label="Concession"><span class="pill">Free</span></td>
+<td data-label="Companion Card">Attendant free (Museums Victoria policy)</td>
+<td data-label="Notes">Senior $12. Planetarium or Lightning Theatre is $10 extra.</td>
+</tr>
+<tr>
+<td data-label="
+
+Venue"><a target="_blank" rel="noopener" href="https://museumsvictoria.com.au/melbournemuseum/plan-your-visit">IMAX Melbourne</a></td>
+<td data-label="Adult">$27 to $31.50 (feature)</td>
+<td data-label="Concession">$23.50 to $27</td>
+<td data-label="Companion Card">Attendant free</td>
+<td data-label="Notes">Documentaries $12 for all tickets. Discounted prices do not apply in roughly the first 11 days of a big release.</td>
+</tr>
+<tr>
+<td data-label="
+
+Venue"><a target="_blank" rel="noopener" href="https://www.zoo.org.au/melbourne/melbourne-zoo-prices/">Melbourne Zoo, Werribee Open Range Zoo, Healesville Sanctuary</a></td>
+<td data-label="Adult">From $58</td>
+<td data-label="Concession">From $44</td>
+<td data-label="Companion Card"><a target="_blank" rel="noopener" href="https://www.zoo.org.au/accessibility/">Carer free</a> with a Companion Card, Disability Pension Card or Child Disability Allowance Health Care Card</td>
+<td data-label="Notes">Senior from $52.50. Quietest 3 to 4:30pm on weekdays. A concession membership is $112 a year.</td>
+</tr>
+<tr>
+<td data-label="
+
+Venue"><a target="_blank" rel="noopener" href="https://www.visitsealife.com/melbourne/tickets-passes/">SEA LIFE Melbourne Aquarium</a></td>
+<td data-label="Adult">From $39 online on weekdays, from $53 on the day</td>
+<td data-label="Concession">From about $32 to $34 online, from $46 on the day</td>
+<td data-label="Companion Card"><a target="_blank" rel="noopener" href="https://visitsealife.com/melbourne/plan-your-day/before-you-visit/accessibility-guide">Carer free</a> with a WeCare or Companion Card</td>
+<td data-label="Notes">Book the concession ticket and the free carer ticket together online. One carer per card.</td>
+</tr>
+<tr>
+<td data-label="
+
+Venue"><a target="_blank" rel="noopener" href="https://lunapark.com.au/tickets/">Luna Park</a></td>
+<td data-label="Adult">$57 unlimited rides (13+)</td>
+<td data-label="Concession">$47</td>
+<td data-label="Companion Card"><a target="_blank" rel="noopener" href="https://lunapark.com.au/frequently-asked-questions/general/">Carer enters free</a> with Companion or We Care card</td>
+<td data-label="Notes">Buy the participant's ticket online in advance. Disability Concession Card is accepted for the concession price.</td>
+</tr>
+<tr>
+<td data-label="
+
+Venue"><a target="_blank" rel="noopener" href="https://puffingbillyrailway.org.au/visit-us/fares-timetables/">Puffing Billy, Belgrave to Lakeside return</a></td>
+<td data-label="Adult">$66</td>
+<td data-label="Concession">$52.50</td>
+<td data-label="Companion Card"><a target="_blank" rel="noopener" href="https://puffingbillyrailway.org.au/experiences/excursion/belgrave-lakeside/">Companion travels free</a> on daily excursion trains</td>
+<td data-label="Notes">Fares valid to 31 Mar 2027. Book Companion Card tickets by phone or email.</td>
+</tr>
+<tr>
+<td data-label="
+
+Venue"><a target="_blank" rel="noopener" href="https://www.ngv.vic.gov.au/margaret-preston-exhibition-access-guide/">NGV: Margaret Preston</a> (to 31 Jan)</td>
+<td data-label="Adult">$35</td>
+<td data-label="Concession">$33</td>
+<td data-label="Companion Card">Concession ticket for the cardholder plus a free companion ticket</td>
+<td data-label="Notes">The access guide lists the $33 rate for Seniors Card holders on Wednesdays, and concession pricing for Carer Card holders. Collect the companion ticket at the Information Desk, no booking needed.</td>
+</tr>
+<tr>
+<td data-label="
+
+Venue"><a target="_blank" rel="noopener" href="https://whatson.melbourne.vic.gov.au/things-to-do/nbl-melbourne-united-v-new-zealand-breakers-2026">Melbourne United (NBL)</a>, John Cain Arena</td>
+<td data-label="Adult">$42</td>
+<td data-label="Concession">$32</td>
+<td data-label="Companion Card">Accepted</td>
+<td data-label="Notes">Senior $32, child $22, under 3 free. Top seats up to $145.</td>
+</tr>
+<tr>
+<td data-label="
+
+Venue"><a target="_blank" rel="noopener" href="https://villagecinemas.com.au/events/sensory-friendly-films">Village Cinemas Sensory Friendly Films</a></td>
+<td data-label="Adult">$7.50</td>
+<td data-label="Concession">$6 with free Vrewards membership</td>
+<td data-label="Companion Card">Accepted at Village, <a target="_blank" rel="noopener" href="https://carersvictoria.org.au/?p=43300">per Carers Victoria</a></td>
+<td data-label="Notes">Lights dimmed, sound down, fewer ads.</td>
+</tr>
+<tr>
+<td data-label="
+
+Venue"><a target="_blank" rel="noopener" href="https://melbourne.moonlight.com.au/faq">Moonlight Cinema</a></td>
+<td data-label="Adult">About $30 general admission (reseller listing)</td>
+<td data-label="Concession">None offered</td>
+<td data-label="Companion Card">Carer gets free general admission, no advance booking needed</td>
+<td data-label="Notes">Outdoor evening sessions from 2 Dec. Accessible toilet, wheelchair viewing position, accessible parking outside the Domain Gate.</td>
+</tr>
+<tr>
+<td data-label="
+
+Venue"><a target="_blank" rel="noopener" href="https://www.melbournepark.com.au/news/australian-open-2027-your-ultimate-guide/">Australian Open</a></td>
+<td data-label="Adult">Opening Week from $10. Ground Pass from $49</td>
+<td data-label="Concession">Not confirmed</td>
+<td data-label="Companion Card"><a target="_blank" rel="noopener" href="https://www.melbournepark.com.au/plan-your-visit/accessibility/">Accepted for all events at Melbourne Park</a></td>
+<td data-label="Notes">Wheelchair bays with companion seats on the three main courts. Sensory rooms were provided in 2026.</td>
+</tr>
+<tr>
+<td data-label="
+
+Venue"><a target="_blank" rel="noopener" href="https://www.acmi.net.au/whats-on/story-of-the-moving-image-exhibition/">ACMI</a></td>
+<td data-label="Adult">Free general entry</td>
+<td data-label="Concession"><span class="pill">Free</span></td>
+<td data-label="Companion Card">Not needed for free entry</td>
+<td data-label="Notes">Ticketed exhibitions and films are priced separately.</td>
+</tr>
+</tbody>
+</table></div></section>
+<section id="deals" data-group="Costs"><p class="eyebrow">Costs</p><h2>Special offers and deals</h2><p>Several offers close on 30 November or 6 December, so the dated ones are listed first.</p>
+<h3 id="deals-closing-soon">Closing soon</h3>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Offer</th>
+<th>Price</th>
+<th>Ends</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="
+
+Offer"><a target="_blank" rel="noopener" href="https://www.melbournepark.com.au/news/australian-open-2027-your-ultimate-guide/">Australian Open Ground Pass early bird</a></td>
+<td data-label="Price">From $49</td>
+<td data-label="Ends">12:59pm, 30 Nov</td>
+<td data-label="Notes">Daily passes are capped this year.</td>
+</tr>
+<tr>
+<td data-label="
+
+Offer"><a target="_blank" rel="noopener" href="https://www.visitsealife.com/melbourne/tickets-passes/annual-passes/">SEA LIFE Melbourne Annual Pass, Black Friday</a></td>
+<td data-label="Price">$79 (usually $99)</td>
+<td data-label="Ends">30 Nov</td>
+<td data-label="Notes">Comes with one free Bring a Friend voucher. The voucher cannot be used 19 Dec to 17 Jan. The pass itself has some restricted dates.</td>
+</tr>
+<tr>
+<td data-label="
+
+Offer"><a target="_blank" rel="noopener" href="https://www.visitsealife.com/melbourne/tickets-passes/annual-passes/">Merlin Annual Pass, Black Friday</a></td>
+<td data-label="Price">$99 (usually $119)</td>
+<td data-label="Ends">30 Nov</td>
+<td data-label="Notes">Covers SEA LIFE Melbourne and LEGOLAND Discovery Centre, no blackout dates. Pays for itself in about three aquarium visits.</td>
+</tr>
+<tr>
+<td data-label="
+
+Offer"><a target="_blank" rel="noopener" href="https://www.melbourneskydeck.com.au/">Melbourne Skydeck, kids go free</a></td>
+<td data-label="Price">One free child ticket per paying adult</td>
+<td data-label="Ends">30 Nov</td>
+<td data-label="Notes">Only useful for participants under 16.</td>
+</tr>
+<tr>
+<td data-label="
+
+Offer"><a target="_blank" rel="noopener" href="https://www.ozbargain.com.au/node/981417">Luna Park Annual Pass sale</a></td>
+<td data-label="Price">$85 (usually $129)</td>
+<td data-label="Ends">11:59pm, 6 Dec</td>
+<td data-label="Notes">12 months of entry and unlimited rides. Cheaper than two unlimited-ride visits.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="deals-running-all-summer">Running all summer</h3>
+<ul>
+<li><strong>Half-price public transport</strong> <a target="_blank" rel="noopener" href="https://transport.vic.gov.au/news-and-resources/news/public-transport-now-half-price-for-everyone">until 1 January 2027</a>: the concession daily cap is $2.85 and full fare is $5.70. Under 18s travel free with a Youth myki, and Seniors Card holders travel free on weekends. City trams are free inside the Free Tram Zone.</li>
+<li><strong>Zoos Victoria</strong>: <a target="_blank" rel="noopener" href="https://www.zoo.org.au/kids-visit-free/">under 16s enter free</a> on weekends, public holidays and school holidays, which covers most of summer. A <a target="_blank" rel="noopener" href="https://www.zoo.org.au/melbourne/melbourne-zoo-prices/">concession membership</a> is $112 a year ($9.33 a month) for unlimited entry to all four zoos.</li>
+<li><strong>Australian Open Opening Week</strong>, 11 to 16 Jan: adults $10, children $5.</li>
+<li><strong>Village Cinemas Sensory Friendly Films</strong>: <a target="_blank" rel="noopener" href="https://villagecinemas.com.au/events/sensory-friendly-films">$6 with a free Vrewards membership</a>.</li>
+<li><strong>Hoyts Cheap Tuesday</strong>: <a target="_blank" rel="noopener" href="https://www.hoyts.com.au/">$13.50 standard tickets</a> all day.</li>
+<li><strong>Lido Cinemas, Hawthorn</strong>: <a target="_blank" rel="noopener" href="https://www.timeout.com/melbourne/film/where-to-get-cheap-movie-tickets-in-melbourne">Tuesday tickets $12, or $8 for members</a>.</li>
+<li><strong>Morning Melodies at Hamer Hall</strong>: <a target="_blank" rel="noopener" href="https://seniorsinmelbourne.com.au/morning-melodies/">groups of four or more pay $28 each</a> instead of $36. Group bookings open 24 Nov.</li>
+<li><strong>Book online in advance</strong>: SEA LIFE is from $39 online on a weekday against $53 on the day.</li>
+</ul>
+<h3 id="deals-cards-that-unlock-ongoing-discounts">Cards that unlock ongoing discounts</h3>
+<ul>
+<li><strong>Companion Card</strong>: free second ticket for the support worker at affiliated venues, and free public transport for them when travelling with the participant.</li>
+<li><strong>Victorian Carer Card (We Care)</strong>: for unpaid family carers, not paid support workers. Worth telling families about: <a target="_blank" rel="noopener" href="https://arcogroup.com.au/carer-and-companion-cards/">half-price weekday and free weekend public transport</a>, and <a target="_blank" rel="noopener" href="https://acd.org.au/save-money-with-a-carer-card/">concession entry at Zoos Victoria and Museums Victoria</a>.</li>
+<li><strong>Seniors Card</strong>: for participants aged 60 and over, cheaper entry at many venues (for example Melbourne Museum $12 and Zoos Victoria from $52.50).</li>
+</ul>
+<p>Not confirmed for this summer: Luna Park's Summer Season Pass ($79 last year, sold in December) and any SEA LIFE Black Friday discount on single-day tickets.</p></section>
+<section id="free" data-group="Costs"><p class="eyebrow">Costs</p><h2>Free all summer</h2><p>These need no fixed date and suit short-notice or hot-day planning.</p>
+<h3 id="free-indoors-good-above-30-degrees">Indoors (good above 30 degrees)</h3>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.ngv.vic.gov.au/">NGV International and NGV Australia</a>: free collection entry. Free shows this summer include Triennial (from 13 Dec), Plant Life (to 7 Feb) and Passage: The Art of Atong Atem (to 14 Jun).</li>
+<li><a target="_blank" rel="noopener" href="https://www.acmi.net.au/whats-on/story-of-the-moving-image-exhibition/">ACMI, Fed Square</a>: free interactive exhibition with playable games, daily 10am to 5pm. Relaxed, low-sensory visits and Auslan tours are offered.</li>
+<li><a target="_blank" rel="noopener" href="https://museumsvictoria.com.au/melbournemuseum/ticketing">Melbourne Museum</a> and <a target="_blank" rel="noopener" href="https://museumsvictoria.com.au/scienceworks/tickets/">Scienceworks</a>: free with a concession card.</li>
+<li><a target="_blank" rel="noopener" href="https://www.boroondara.vic.gov.au/explore-boroondara/events-and-activities">Boroondara Summer Salon</a>, Town Hall Gallery, Hawthorn: free, to 23 Jan.</li>
+<li>Local libraries: free, cool, with quiet spaces and holiday programs. Check the council's what's-on page.</li>
+</ul>
+<h3 id="free-accessible-beaches">Accessible beaches</h3>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.portphillip.vic.gov.au/explore-the-city/beaches-parks-and-playgrounds/accessible-beaches">St Kilda, Port Melbourne and Elwood</a>: beach matting at St Kilda and Port Melbourne Life Saving Clubs and Elwood Sailing Club. A Mobi-chair floating beach wheelchair can be booked in summer at St Kilda and Port Melbourne. Matting comes up on Monday afternoons for cleaning.</li>
+<li><a target="_blank" rel="noopener" href="https://schoolholidays.com.au/l/wheelchair-accessible-beach-in-williamstown">Williamstown</a>: matting to the shoreline seven days a week, free beach wheelchairs on weekends in patrol hours (12 to 5pm).</li>
+<li><a target="_blank" rel="noopener" href="https://www.melbourneplaygrounds.com.au/the-best-accessible-beaches">Altona, Mordialloc, Hampton and Carrum</a>: matting or beach wheelchairs through the local life saving clubs. Phone ahead to confirm.</li>
+</ul>
+<h3 id="free-outdoors">Outdoors</h3>
+<ul>
+<li>Royal Botanic Gardens Melbourne: free entry, shaded paths, wheelchair hire available.</li>
+<li>Christmas lights walk in the CBD (to 25 Dec) and Myer Windows (to 5 Jan).</li>
+<li>Queen Vic Market Summer Night Market, Wednesdays from 6 Jan: free entry, pay for food.</li>
+</ul></section>
+<section id="sensory" data-group="Access"><p class="eyebrow">Access</p><h2>Sensory-friendly and disability-specific</h2><div class="tablewrap"><table>
+<thead>
+<tr>
+<th>What</th>
+<th>When</th>
+<th>Cost</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="
+
+What"><a target="_blank" rel="noopener" href="https://museumsvictoria.com.au/scienceworks/whats-on/low-sensory-sessions/">Scienceworks Low Sensory Sessions</a></td>
+<td data-label="When">First Saturday of each month (5 Dec, 2 Jan, 6 Feb)</td>
+<td data-label="Cost">Adult $15, concession free</td>
+<td data-label="Notes">Lower sound and light, fewer people, sensory maps and social stories.</td>
+</tr>
+<tr>
+<td data-label="
+
+What"><a target="_blank" rel="noopener" href="https://villagecinemas.com.au/events/sensory-friendly-films">Village Cinemas Sensory Friendly Films</a></td>
+<td data-label="When">Regular sessions, check the cinema</td>
+<td data-label="Cost">$6 members, $7.50 non-members</td>
+<td data-label="Notes">Designed for autistic children and adults.</td>
+</tr>
+<tr>
+<td data-label="
+
+What"><a target="_blank" rel="noopener" href="https://www.hoyts.com.au/accessibility">Hoyts Sensory Screenings</a></td>
+<td data-label="When">One Saturday morning a month at all Hoyts cinemas</td>
+<td data-label="Cost">Standard ticket, check the cinema</td>
+<td data-label="Notes">Lights dimmed, volume lowered. Hoyts also offers audio description and captions.</td>
+</tr>
+<tr>
+<td data-label="
+
+What"><a target="_blank" rel="noopener" href="https://www.acmi.net.au/whats-on/story-of-the-moving-image-exhibition/">ACMI relaxed visits</a></td>
+<td data-label="When">Scheduled dates, see ACMI calendar</td>
+<td data-label="Cost"><span class="pill">Free</span></td>
+<td data-label="Notes">Low sensory mode in the main exhibition.</td>
+</tr>
+<tr>
+<td data-label="
+
+What"><a target="_blank" rel="noopener" href="https://www.artscentremelbourne.com.au/visit/accessibility/when-you-visit/relaxed-performances">Arts Centre Melbourne Relaxed Performances</a></td>
+<td data-label="When">Selected shows</td>
+<td data-label="Cost">Varies by show</td>
+<td data-label="Notes">Doors open, house lights dimmed, quiet area, visual story in advance. The January 2027 kids and families program was not confirmed, so check the listings.</td>
+</tr>
+<tr>
+<td data-label="
+
+What"><a target="_blank" rel="noopener" href="https://www.mso.com.au/performance/2026-classic-kids-christmas">MSO Classic Kids: Christmas (relaxed)</a></td>
+<td data-label="When">Sat 5 Dec, 12:30pm</td>
+<td data-label="Cost">$35</td>
+<td data-label="Notes">Hamer Hall.</td>
+</tr>
+<tr>
+<td data-label="
+
+What"><a target="_blank" rel="noopener" href="https://aaaplay.org.au/events/2026/12/melbourne-victoria-celebrates-international-day-of-people-with-a-disability/">Melbourne Victory inclusive football event</a></td>
+<td data-label="When">Fri 4 Dec, 5 to 7pm</td>
+<td data-label="Cost"><span class="pill">Free</span></td>
+<td data-label="Notes">AAMI Park. Groups and organisations are invited.</td>
+</tr>
+<tr>
+<td data-label="
+
+What"><a target="_blank" rel="noopener" href="https://seniorsinmelbourne.com.au/morning-melodies/">Morning Melodies 2027</a></td>
+<td data-label="When">From Mon 15 Feb, 11am and 1:30pm</td>
+<td data-label="Cost">$36, groups of four or more $28 each</td>
+<td data-label="Notes">Daytime one-hour concerts at Hamer Hall. Suits participants who prefer daytime outings. Tickets on sale 1 Dec.</td>
+</tr>
+</tbody>
+</table></div>
+<p>For all-abilities sport and recreation, <a target="_blank" rel="noopener" href="https://aaaplay.org.au/events/">AAA Play</a> lists inclusive events across Victoria.</p></section>
+<section id="east" data-group="By area"><p class="eyebrow">By area</p><h2>Eastern suburbs</h2><p>Local free events that avoid a trip into the city.</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>When</th>
+<th>Event</th>
+<th>Where</th>
+<th>Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="
+
+When">Sat 5 Dec, 5:30 to 9:15pm</td>
+<td data-label="Event"><a target="_blank" rel="noopener" href="https://www.monash.vic.gov.au/Things-to-Do/Festivals-and-Events/Monash-Carols-by-Candlelight-2025">Monash Carols by Candlelight</a></td>
+<td data-label="Where">Jells Park, Wheelers Hill</td>
+<td data-label="Cost"><span class="pill">Free</span></td>
+</tr>
+<tr>
+<td data-label="
+
+When">Fri 11 Dec, 6 to 10pm</td>
+<td data-label="Event"><a target="_blank" rel="noopener" href="https://www.manningham.vic.gov.au/events/manningham-carols-candlelight-2026">Manningham Carols by Candlelight</a></td>
+<td data-label="Where">Ruffey Lake Park, Doncaster</td>
+<td data-label="Cost">Free, registration needed</td>
+</tr>
+<tr>
+<td data-label="
+
+When">Sat 12 Dec, 6:30 to 9:15pm</td>
+<td data-label="Event"><a target="_blank" rel="noopener" href="https://aprd.boroondara.vic.gov.au/events/carols-park-2026">Carols in the Park</a></td>
+<td data-label="Where">Macleay Park, North Balwyn</td>
+<td data-label="Cost"><span class="pill">Free</span></td>
+</tr>
+<tr>
+<td data-label="
+
+When">Sat 19 Dec</td>
+<td data-label="Event"><a target="_blank" rel="noopener" href="https://www.creativewhitehorse.vic.gov.au/carols">Whitehorse Carols</a></td>
+<td data-label="Where">Whitehorse Civic Centre precinct, Nunawading</td>
+<td data-label="Cost"><span class="pill">Free</span></td>
+</tr>
+<tr>
+<td data-label="
+
+When">To 23 Jan</td>
+<td data-label="Event"><a target="_blank" rel="noopener" href="https://www.boroondara.vic.gov.au/explore-boroondara/events-and-activities">Boroondara Summer Salon</a></td>
+<td data-label="Where">Town Hall Gallery, Hawthorn</td>
+<td data-label="Cost"><span class="pill">Free</span></td>
+</tr>
+<tr>
+<td data-label="
+
+When">Sat 13 Feb, 10am to 11pm</td>
+<td data-label="Event"><a target="_blank" rel="noopener" href="https://boxhillfestival.com.au/">Box Hill Chinese New Year Festival</a></td>
+<td data-label="Where">Box Hill</td>
+<td data-label="Cost"><span class="pill">Free</span></td>
+</tr>
+<tr>
+<td data-label="
+
+When">February, date to come</td>
+<td data-label="Event"><a target="_blank" rel="noopener" href="https://www.abaw.org.au/current-events/">Manningham Chinese New Year Festival</a></td>
+<td data-label="Where">Manningham</td>
+<td data-label="Cost"><span class="pill">Free</span></td>
+</tr>
+</tbody>
+</table></div>
+<p>Two programs ran last summer and are likely to return, but 2027 dates were not published when this was checked: Boroondara's free <a target="_blank" rel="noopener" href="https://www.boroondara.vic.gov.au/explore-boroondara/events/major-events-and-festivals/summer-park">Summer in the Park</a> music and cinema series (late January to end of February in 2026) and the Whitehorse Australia Day concert at Nunawading.</p></section>
+<section id="festivals" data-group="What&#x27;s on"><p class="eyebrow">What&#x27;s on</p><h2>Festivals: music, food and culture</h2><p>Most of the big summer festivals are free. They add to the dated calendar above.</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>When</th>
+<th>Festival</th>
+<th>Type</th>
+<th>Where</th>
+<th>Cost</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="
+
+When">4 to 6 Dec</td>
+<td data-label="Festival"><a target="_blank" rel="noopener" href="https://misformelbourne.com/december-in-melbourne-australia/">Good Food &amp; Wine Show Christmas Market</a></td>
+<td data-label="Type">Food</td>
+<td data-label="Where">MCEC, South Wharf</td>
+<td data-label="Cost">From $34.95</td>
+<td data-label="Notes">Indoor, accessible venue. Concession price not confirmed.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">Wednesdays from 6 Jan</td>
+<td data-label="Festival">Queen Vic Market Summer Night Market</td>
+<td data-label="Type">Food</td>
+<td data-label="Where">Queen Victoria Market</td>
+<td data-label="Cost"><span class="pill">Free entry</span></td>
+<td data-label="Notes">Street food from many cultures. See calendar above.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">17 Jan to 7 Feb</td>
+<td data-label="Festival">Midsumma Festival</td>
+<td data-label="Type">Culture, arts</td>
+<td data-label="Where">Citywide</td>
+<td data-label="Cost">Many free events</td>
+<td data-label="Notes">Carnival 17 Jan, Pride March 31 Jan, Street Party 7 Feb.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">7 Feb</td>
+<td data-label="Festival">Chinatown Lunar New Year Festival</td>
+<td data-label="Type">Culture, food</td>
+<td data-label="Where">Little Bourke St</td>
+<td data-label="Cost"><span class="pill">Free</span></td>
+<td data-label="Notes">Year of the Goat.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">13 Feb</td>
+<td data-label="Festival">Box Hill Chinese New Year Festival</td>
+<td data-label="Type">Culture, food</td>
+<td data-label="Where">Box Hill</td>
+<td data-label="Cost"><span class="pill">Free</span></td>
+<td data-label="Notes">Local for the east.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">12, 13, 19 Feb</td>
+<td data-label="Festival">Sidney Myer Free Concerts</td>
+<td data-label="Type">Classical music</td>
+<td data-label="Where">Sidney Myer Music Bowl</td>
+<td data-label="Cost"><span class="pill">Free</span></td>
+<td data-label="Notes">Bring a picnic.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">Fri 19 Feb</td>
+<td data-label="Festival"><a target="_blank" rel="noopener" href="https://www.timeout.com/melbourne/news/how-to-get-tickets-to-laneway-in-melbourne-2027-pre-sale-date-line-up-more-093026">Laneway Festival</a></td>
+<td data-label="Type">Music</td>
+<td data-label="Where">Flemington Park</td>
+<td data-label="Cost"><a target="_blank" rel="noopener" href="https://www.marieclaire.com.au/life/entertainment/laneway-festival-2027-tickets-lineup-dates-presale/">From $239.90</a></td>
+<td data-label="Notes">Large, loud and expensive. For keen fans only. Check age limits and accessible viewing.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">20 and 21 Feb</td>
+<td data-label="Festival">St Kilda Festival</td>
+<td data-label="Type">Music</td>
+<td data-label="Where">St Kilda foreshore</td>
+<td data-label="Cost"><span class="pill">Free</span></td>
+<td data-label="Notes">Saturday is calmer.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">Sat 27 Feb</td>
+<td data-label="Festival"><a target="_blank" rel="noopener" href="https://pakofesta.com.au/">Pako Festa</a></td>
+<td data-label="Type">Culture, food</td>
+<td data-label="Where">Pakington St, Geelong West</td>
+<td data-label="Cost"><span class="pill">Free</span></td>
+<td data-label="Notes">Day trip. Stalls 9am to 5pm, parade 11am.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">27 and 28 Feb</td>
+<td data-label="Festival"><a target="_blank" rel="noopener" href="https://www.melbournepoint.com.au/events/antipodes-festival/">Antipodes Festival</a></td>
+<td data-label="Type">Greek culture, food</td>
+<td data-label="Where">Lonsdale St, CBD</td>
+<td data-label="Cost"><span class="pill">Free</span></td>
+<td data-label="Notes">Program and hours still to come.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">February, dates to come</td>
+<td data-label="Festival"><a target="_blank" rel="noopener" href="https://www.melbournetourism.org/melbourne-in-summer/">National Sustainability Festival</a></td>
+<td data-label="Type">Community</td>
+<td data-label="Where">Fed Square</td>
+<td data-label="Cost">Mostly free</td>
+<td data-label="Notes">2027 dates not announced.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Outside the summer window but worth noting for the next update: Melbourne Food and Wine Festival (March), Ability Fest (the accessible music festival, held in April in 2026, 2027 not announced) and Moomba (March).</p></section>
+<section id="expos" data-group="What&#x27;s on"><p class="eyebrow">What&#x27;s on</p><h2>Expos and fan events</h2><div class="tablewrap"><table>
+<thead>
+<tr>
+<th>When</th>
+<th>Event</th>
+<th>Where</th>
+<th>Cost</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="
+
+When">Fri 20 and Sat 21 Nov</td>
+<td data-label="Event"><a target="_blank" rel="noopener" href="https://www.impactinstitute.com.au/disability-expos/">Melbourne Disability Expo</a></td>
+<td data-label="Where">MCEC, South Wharf</td>
+<td data-label="Cost">Check, sister expos are free entry</td>
+<td data-label="Notes">This week. Providers, equipment and recreation options in one place. Useful for support workers as well as participants.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">Sat 16 and Sun 17 Jan</td>
+<td data-label="Event"><a target="_blank" rel="noopener" href="https://www.brickvention.melbourne/">Brickvention (LEGO fan expo)</a></td>
+<td data-label="Where">Royal Exhibition Building, Carlton</td>
+<td data-label="Cost">Ticketed, timed sessions</td>
+<td data-label="Notes">Sessions sell out. Book early. Strong pick for LEGO fans.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">5 and 6 Mar</td>
+<td data-label="Event"><a target="_blank" rel="noopener" href="https://www.impactinstitute.com.au/disability-expos/">Geelong Disability Expo</a></td>
+<td data-label="Where">Geelong Arena</td>
+<td data-label="Cost">Check</td>
+<td data-label="Notes">Just outside summer.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">April</td>
+<td data-label="Event">Source Kids Disability Expo</td>
+<td data-label="Where">MCEC</td>
+<td data-label="Cost">Check</td>
+<td data-label="Notes">For children, teens and young adults. Two different April dates are listed online, so confirm.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Pop culture conventions (Supanova, Oz Comic-Con) and the main gaming events (PAX, Melbourne International Games Week) fall outside summer.</p></section>
+<section id="sport" data-group="What&#x27;s on"><p class="eyebrow">What&#x27;s on</p><h2>Sporting events</h2><p>Cricket, basketball, soccer and tennis all run through summer. All three main venues (MCG, Melbourne Park, AAMI Park) have wheelchair seating, so book through the venue's accessible seating line.</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>When</th>
+<th>Event</th>
+<th>Where</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="
+
+When">Sat 21 Nov, 7:15pm</td>
+<td data-label="Event"><a target="_blank" rel="noopener" href="https://www.austadiums.com/city/melbourne/events">T20 International, Australia v England</a></td>
+<td data-label="Where">MCG</td>
+<td data-label="Notes">This weekend.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">Sat 21 Nov, Sun 6 Dec, Sat 12 Dec, Wed 23 Dec, Sun 7 Feb, Thu 11 Feb</td>
+<td data-label="Event"><a target="_blank" rel="noopener" href="https://www.axs.com/au/teams/1123417/melbourne-united-tickets">Melbourne United (NBL) home games</a></td>
+<td data-label="Where">John Cain Arena</td>
+<td data-label="Notes">Adult $42, concession $32, child $22. Companion Card accepted. Indoor, about two hours, loud music and crowd, with quiet spaces listed. South East Melbourne Phoenix also play here.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">3 to 6 Dec</td>
+<td data-label="Event"><a target="_blank" rel="noopener" href="https://www.austadiums.com/city/melbourne/events">Sheffield Shield, Victoria v Queensland</a></td>
+<td data-label="Where">MCG</td>
+<td data-label="Notes">Quiet, small crowd, come and go as you like. Good low-pressure first visit to the MCG.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">Fri 4 Dec, 5 to 7pm</td>
+<td data-label="Event">Melbourne Victory inclusive football event</td>
+<td data-label="Where">AAMI Park</td>
+<td data-label="Notes">Free, disability specific. See calendar.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">Fri 11 Dec, 7pm</td>
+<td data-label="Event"><a target="_blank" rel="noopener" href="https://www.austadiums.com/city/melbourne/events">Zatopek:10 athletics</a></td>
+<td data-label="Where">Lakeside Stadium, Albert Park</td>
+<td data-label="Notes" class="empty"></td>
+</tr>
+<tr>
+<td data-label="
+
+When">Sat 12 Dec and Sat 19 Dec, 7:40pm</td>
+<td data-label="Event"><a target="_blank" rel="noopener" href="https://www.austadiums.com/city/melbourne/events">A-League: Victory v Newcastle, then City v Victory</a></td>
+<td data-label="Where">AAMI Park</td>
+<td data-label="Notes">The derby on 19 Dec is the bigger, louder crowd.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">Fri 18 Dec 7:15pm, Fri 1 Jan 4pm, Mon 4 Jan 6:05pm, Thu 7 Jan 7:15pm, Thu 14 Jan 7:15pm, Sat 16 Jan 7:15pm</td>
+<td data-label="Event"><a target="_blank" rel="noopener" href="https://www.mcg.org.au/news/2026/july/bbl16-fixture-released">Big Bash League at the MCG</a></td>
+<td data-label="Where">MCG</td>
+<td data-label="Notes">Six games. Stars and Renegades both play here this season. Kids go free on opening night, 18 Dec. Evening games around three hours with music and fireworks. The Renegades also play two games at Junction Oval.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">26 to 30 Dec</td>
+<td data-label="Event">Boxing Day Test, Australia v New Zealand</td>
+<td data-label="Where">MCG</td>
+<td data-label="Notes">See calendar.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">11 to 31 Jan</td>
+<td data-label="Event">Australian Open</td>
+<td data-label="Where">Melbourne Park</td>
+<td data-label="Notes">Opening Week from $10. <a target="_blank" rel="noopener" href="https://www.lta.org.uk/fan-zone/grand-slam/australian-open/">Wheelchair tennis is listed for 26 to 31 Jan</a>, worth watching on a Ground Pass.</td>
+</tr>
+</tbody>
+</table></div>
+<p>BBL public and concession prices are only shown on Ticketek (a reseller lists tickets from $49). A-League prices were not confirmed. For cricket, buy the full-price ticket first, then request the Companion Card ticket. The MCG's 150th anniversary Test is in March, just outside summer.</p></section>
+<section id="film" data-group="What&#x27;s on"><p class="eyebrow">What&#x27;s on</p><h2>Film: new releases, IMAX, festivals and outdoor cinema</h2><h3 id="film-cinema-releases-australian-dates">Cinema releases (Australian dates)</h3>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Film</th>
+<th>Suits</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="
+
+Date">19 Nov</td>
+<td data-label="Film">The Hunger Games: Sunrise on the Reaping</td>
+<td data-label="Suits">Teens and adults</td>
+</tr>
+<tr>
+<td data-label="
+
+Date">26 Nov</td>
+<td data-label="Film">Disney's Hexed</td>
+<td data-label="Suits">Family</td>
+</tr>
+<tr>
+<td data-label="
+
+Date">3 Dec</td>
+<td data-label="Film">The Cat in the Hat</td>
+<td data-label="Suits">Family, younger viewers</td>
+</tr>
+<tr>
+<td data-label="
+
+Date">17 Dec</td>
+<td data-label="Film">Avengers: Doomsday</td>
+<td data-label="Suits">Action, Marvel fans</td>
+</tr>
+<tr>
+<td data-label="
+
+Date">17 Dec</td>
+<td data-label="Film">Dune: Part Three</td>
+<td data-label="Suits">Sci-fi, adults</td>
+</tr>
+<tr>
+<td data-label="
+
+Date">26 Dec</td>
+<td data-label="Film">Jumanji: Open World</td>
+<td data-label="Suits">Family, gamers</td>
+</tr>
+<tr>
+<td data-label="
+
+Date">26 Dec</td>
+<td data-label="Film">The Angry Birds Movie 3</td>
+<td data-label="Suits">Family (one source lists 23 Dec)</td>
+</tr>
+<tr>
+<td data-label="
+
+Date">1 Jan</td>
+<td data-label="Film">Werwulf</td>
+<td data-label="Suits">Adults only, horror</td>
+</tr>
+<tr>
+<td data-label="
+
+Date">7 Jan</td>
+<td data-label="Film">Zac Power</td>
+<td data-label="Suits">Family, Australian animation</td>
+</tr>
+<tr>
+<td data-label="
+
+Date">21 Jan</td>
+<td data-label="Film">Children of Blood and Bone</td>
+<td data-label="Suits">Teens and adults, fantasy</td>
+</tr>
+<tr>
+<td data-label="
+
+Date">4 Feb</td>
+<td data-label="Film">Ice Age: Boiling Point</td>
+<td data-label="Suits">Family</td>
+</tr>
+<tr>
+<td data-label="
+
+Date">25 Feb</td>
+<td data-label="Film">Cocomelon: The Movie</td>
+<td data-label="Suits">Very young viewers</td>
+</tr>
+</tbody>
+</table></div>
+<p>Dates are from the <a target="_blank" rel="noopener" href="https://www.thecurb.com.au/australian-theatrical-release-schedule/">Australian theatrical release schedule</a> and <a target="_blank" rel="noopener" href="https://newywithkids.com.au/coming-soon-new-kids-family-movies-australia/">family release lists</a>. Release dates move, and listings disagree on Narnia: The Magician's Nephew and the Star Wars 50th anniversary re-release, so check before planning around them.</p>
+<h3 id="film-imax-melbourne-melbourne-museum">IMAX Melbourne (Melbourne Museum)</h3>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://imaxmelbourne.com.au/movie_pricing/dune-part-three">Dune: Part Three in IMAX 70mm</a> opens Thursday 17 December. IMAX Melbourne is the only Australian cinema showing it on 70mm film, so sessions will book out. Free and complimentary tickets are not accepted for it until 31 January, so ask how that affects Companion Card tickets.</li>
+<li>The Odyssey is still showing in IMAX 70mm.</li>
+<li>Feature films are $25 to $31.50 adult and $23.50 to $27 concession. Documentaries are $12 for everyone and are shorter and calmer.</li>
+</ul>
+<h3 id="film-film-festivals-and-outdoor-cinema">Film festivals and outdoor cinema</h3>
+<ul>
+<li>Moonlight Cinema, Royal Botanic Gardens, 2 Dec to 11 Apr. Christmas films run 11 to 23 Dec.</li>
+<li><a target="_blank" rel="noopener" href="https://www.lidocinemas.com.au/events">Lido on the Roof</a>, Hawthorn: rooftop cinema, December to March. Close to the eastern suburbs.</li>
+<li><a target="_blank" rel="noopener" href="https://www.lidocinemas.com.au/events/europaeuropa">Europa! Europa film festival</a> at Lido, Classic and Cameo cinemas ran from 19 February in 2026. 2027 dates not announced.</li>
+<li>Sunset Cinema (St Kilda Botanical Gardens) ran last summer. This season is not confirmed.</li>
+<li>The Other Film Festival, run by Arts Access Victoria, is disability-led. Dates not found, so check their site.</li>
+</ul></section>
+<section id="museums" data-group="What&#x27;s on"><p class="eyebrow">What&#x27;s on</p><h2>Museum and gallery events</h2><div class="tablewrap"><table>
+<thead>
+<tr>
+<th>What</th>
+<th>When</th>
+<th>Adult</th>
+<th>Concession</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="
+
+What"><a target="_blank" rel="noopener" href="https://museumsvictoria.com.au/melbournemuseum/whats-on/barbie-the-exhibition/">Barbie: The Exhibition</a>, Melbourne Museum</td>
+<td data-label="When">28 Nov to 16 May</td>
+<td data-label="Adult"><a target="_blank" rel="noopener" href="https://creammagazine.com/2026/11/10/an-exhibition-fully-dedicated-to-barbie-on-at-the-melbourne-museum/">$30</a></td>
+<td data-label="Concession">$25</td>
+<td data-label="Notes">Includes museum entry. Lower sensory sessions: Thu 3 Dec, 7 Jan and 4 Feb (3 to 5pm), Fri 4 Dec, 8 Jan and 5 Feb (9 to 10am).</td>
+</tr>
+<tr>
+<td data-label="
+
+What"><a target="_blank" rel="noopener" href="https://mumslittleexplorers.com/fun-school-holiday-activities-melbourne/">Lifelike: Puppets, Movies &amp; Magic</a>, ACMI</td>
+<td data-label="When">20 Nov to 18 Apr</td>
+<td data-label="Adult">Check</td>
+<td data-label="Concession">Check</td>
+<td data-label="Notes">Film puppets and animatronics, including E.T. and Jim Henson characters.</td>
+</tr>
+<tr>
+<td data-label="
+
+What"><a target="_blank" rel="noopener" href="https://museumsvictoria.com.au/scienceworks/whats-on/school-holidays/">Colour: See the World in a New Light</a>, Scienceworks</td>
+<td data-label="When">To 26 Jan</td>
+<td data-label="Adult">$8 to $25 on top of entry</td>
+<td data-label="Concession" class="empty"></td>
+<td data-label="Notes">Hands-on. Free colour workshops in school holidays.</td>
+</tr>
+<tr>
+<td data-label="
+
+What">Starlight planetarium show, Scienceworks</td>
+<td data-label="When">To 27 Jan</td>
+<td data-label="Adult">$8 to $25</td>
+<td data-label="Concession" class="empty"></td>
+<td data-label="Notes">Dark room, reclined seating.</td>
+</tr>
+<tr>
+<td data-label="
+
+What">NGV Triennial</td>
+<td data-label="When">13 Dec to 11 Apr</td>
+<td data-label="Adult"><span class="pill">Free</span></td>
+<td data-label="Concession"><span class="pill">Free</span></td>
+<td data-label="Notes" class="empty"></td>
+</tr>
+<tr>
+<td data-label="
+
+What">ACMI school holiday hours</td>
+<td data-label="When">19 Dec to 26 Jan</td>
+<td data-label="Adult"><span class="pill">Free entry</span></td>
+<td data-label="Concession"><span class="pill">Free</span></td>
+<td data-label="Notes">Open 10am to 6pm daily. Workshops cost extra.</td>
+</tr>
+</tbody>
+</table></div></section>
+<section id="interests" data-group="What&#x27;s on"><p class="eyebrow">What&#x27;s on</p><h2>By interest and hobby</h2><p>Pick the row that matches what the participant already loves, then check the detail.</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Interest</th>
+<th>Options</th>
+<th>Cost</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="
+
+Interest">Gaming (video)</td>
+<td data-label="Options"><a target="_blank" rel="noopener" href="https://whatson.melbourne.vic.gov.au/things-to-do/fortress-melbourne">Fortress Melbourne</a>, Emporium, CBD: PCs, consoles, arcade. ACMI's free playable games gallery.</td>
+<td data-label="Cost">Fortress entry is free. PC play $15 an hour or $36 for 4 hours. Console booth $30 an hour for up to 8 people</td>
+<td data-label="Notes">Open from 12pm daily: to 10pm Sunday to Thursday, midnight Friday, 1am Saturday. Busy and loud on weekends.</td>
+</tr>
+<tr>
+<td data-label="
+
+Interest">Gaming (tabletop)</td>
+<td data-label="Options">Fortress board game library, <a target="_blank" rel="noopener" href="https://secretmelbourne.com/board-game-cafes-bars-melbourne/">free on Wednesdays</a>. Marche Board Game Cafe, A'Beckett St, CBD.</td>
+<td data-label="Cost">Board game hire $15 at Fortress, free for members</td>
+<td data-label="Notes">Dungeons and Dragons sessions run at Fortress.</td>
+</tr>
+<tr>
+<td data-label="
+
+Interest">Go karting</td>
+<td data-label="Options"><a target="_blank" rel="noopener" href="https://www.acekarts.com.au/">Ace Karts</a>, 20 Carrington Drive, Albion: outdoor track, drivers 12 and over, open daily from 9am. <a target="_blank" rel="noopener" href="https://www.battlekart.com/en/melbourne-west-footscray">BattleKart</a>, West Footscray: electric karts on a projected video-game track.</td>
+<td data-label="Cost">Ace Karts $49 a race on weekdays, $55 weekends. BattleKart $65 a session</td>
+<td data-label="Notes">Ace Karts has <a target="_blank" rel="noopener" href="https://www.acekarts.com.au/pricing">two-seater karts from $89</a> so a support worker can drive with a passenger. BattleKart says track access is limited for people with reduced mobility. Karting Madness in Braybrook lists a double kart with a passenger wheel that can be locked (secondary listing). No hand-control karts were found in Melbourne, so phone ahead.</td>
+</tr>
+<tr>
+<td data-label="
+
+Interest">LEGO and building</td>
+<td data-label="Options">Brickvention, 16 and 17 Jan. LEGOLAND Discovery Centre, Chadstone (covered by the Merlin pass).</td>
+<td data-label="Cost">Ticketed</td>
+<td data-label="Notes">Brickvention sessions sell out.</td>
+</tr>
+<tr>
+<td data-label="
+
+Interest">Trains</td>
+<td data-label="Options"><a target="_blank" rel="noopener" href="https://bhmsrs.org.au/">Box Hill Miniature Steam Railway</a>, Elgar Park, Mont Albert North: third Sunday of the month, second Sunday in December (13 Dec, 17 Jan, 21 Feb), 11am to 4pm. <a target="_blank" rel="noopener" href="https://tothotornot.com/miniature-railway-melbourne/">Diamond Valley Railway</a>, Eltham: every Sunday 11am to 5pm. Puffing Billy.</td>
+<td data-label="Cost">About $3 to $4 a ride for the miniature railways</td>
+<td data-label="Notes">Enclosed shoes required. Passengers sit astride the miniature carriages, so check transfers for wheelchair users.</td>
+</tr>
+<tr>
+<td data-label="
+
+Interest">Art and making</td>
+<td data-label="Options"><a target="_blank" rel="noopener" href="https://www.artsaccess.com.au/get-creative/studios/">Arts Access Victoria studios</a> for Deaf and Disabled artists. <a target="_blank" rel="noopener" href="https://artsproject.org.au/artist-programs/in-person-programs">Arts Project Australia</a>, Northcote, for artists with intellectual disability. <a target="_blank" rel="noopener" href="https://www.bayleyhouse.org.au/what-we-do/bayley-arts/">Bayley Arts</a>, Bayside.</td>
+<td data-label="Cost">Usually NDIS funded</td>
+<td data-label="Notes">These are ongoing programs, not drop-ins. Enquire about places. The Choose Art directory lists more.</td>
+</tr>
+<tr>
+<td data-label="
+
+Interest">Music and dance</td>
+<td data-label="Options">Sidney Myer Free Concerts, St Kilda Festival, Morning Melodies. <a target="_blank" rel="noopener" href="https://manningham.vic.gov.au/events/good-vibrations-all-abilities-disco">Good Vibrations All Abilities Disco</a>, Scout Hall, Doncaster. Monthly <a target="_blank" rel="noopener" href="https://belgravialeisure.com.au/trac-launches-monthly-all-abilities-disco-to-support-social-connection-ahead-of-loneliness-awareness-week/">All Abilities Disco</a> at Thomastown Recreation and Aquatic Centre.</td>
+<td data-label="Cost">Doncaster disco is listed as free</td>
+<td data-label="Notes">Disco dates over summer not confirmed. Contact the organisers.</td>
+</tr>
+<tr>
+<td data-label="
+
+Interest">Sport (playing)</td>
+<td data-label="Options"><a target="_blank" rel="noopener" href="https://aaaplay.org.au/events/">AAA Play</a> matches people with disability to local sport. Sailability at <a target="_blank" rel="noopener" href="https://freewheelweekends.com.au/features/sailing-albert-park-lake">Albert Park Lake</a> and <a target="_blank" rel="noopener" href="https://lysterfieldsailing.com.au/index.php/sailability-3/">Lysterfield</a> (Wednesdays and Fridays in terms 1 and 4). All-abilities cricket and walking basketball through the state bodies.</td>
+<td data-label="Cost">Varies</td>
+<td data-label="Notes">AAA Play is a free referral service. Start there.</td>
+</tr>
+<tr>
+<td data-label="
+
+Interest">Animals</td>
+<td data-label="Options">Melbourne Zoo, Werribee Open Range Zoo, Healesville Sanctuary, SEA LIFE.</td>
+<td data-label="Cost">See paid venues table</td>
+<td data-label="Notes" class="empty"></td>
+</tr>
+<tr>
+<td data-label="
+
+Interest">Beach and water</td>
+<td data-label="Options">Accessible beaches with matting and beach wheelchairs. Local aquatic centres with pool hoists.</td>
+<td data-label="Cost">Beach wheelchairs are free</td>
+<td data-label="Notes">Check each pool's access page for hoist and change facilities.</td>
+</tr>
+<tr>
+<td data-label="
+
+Interest">Food</td>
+<td data-label="Options">Queen Vic Market Summer Night Market, Lunar New Year festivals, Antipodes, Pako Festa, Good Food &amp; Wine Show.</td>
+<td data-label="Cost">Mostly free entry</td>
+<td data-label="Notes" class="empty"></td>
+</tr>
+<tr>
+<td data-label="
+
+Interest">Shopping and markets</td>
+<td data-label="Options">Queen Victoria Market by day, Christmas windows and CBD decorations.</td>
+<td data-label="Cost"><span class="pill">Free</span></td>
+<td data-label="Notes" class="empty"></td>
+</tr>
+</tbody>
+</table></div></section>
+<section id="autism-adhd" data-group="Access"><p class="eyebrow">Access</p><h2>Autism and ADHD specific</h2><p>These are quieter sessions, or social groups built around a shared interest, which tend to work better than general crowds.</p>
+<h3 id="autism-adhd-low-sensory-sessions">Low sensory sessions</h3>
+<ul>
+<li>Barbie: The Exhibition lower sensory sessions at Melbourne Museum (dates in the museum table above).</li>
+<li>Scienceworks Low Sensory Sessions, first Saturday of each month.</li>
+<li>Village Sensory Friendly Films and Hoyts Sensory Screenings.</li>
+<li>ACMI relaxed visits. The Christmas Magic Mirror at Southgate is listed as low sensory.</li>
+<li><a target="_blank" rel="noopener" href="https://www.activatebyhardrock.com.au/2026/06/10/low-sensory-climbing-sessions/">Low sensory climbing at Activate by Hardrock</a>: first Sunday of the month, 4pm, no birthday parties during the session. Confirm the venue location and price.</li>
+</ul>
+<h3 id="autism-adhd-movement-and-regulation-useful-for-adhd">Movement and regulation (useful for ADHD)</h3>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://clipnclimbberwick.com.au/">MindClimb at Clip 'n Climb Berwick</a>: climbing program for people with ASD and ADHD, overseen by an occupational therapist, listed as suitable for NDIS funding.</li>
+<li>Go karting, trampoline parks, swimming and beach days all give strong physical input in short bursts. Go off-peak (weekday mornings in term, or first session of the day in holidays).</li>
+<li>Short, active outings with a clear end usually work better than long seated events. Opening Week at the tennis or a Sheffield Shield day lets people come and go.</li>
+</ul>
+<h3 id="autism-adhd-gaming-and-interest-based-social-groups">Gaming and interest-based social groups</h3>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Group</th>
+<th>Who for</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="
+
+Group"><a target="_blank" rel="noopener" href="https://travengers.com.au/social-clubs/">Travengers Melbourne Gamers Club</a></td>
+<td data-label="Who for">Young autistic and neurodivergent adults</td>
+<td data-label="Notes">Fortnightly.</td>
+</tr>
+<tr>
+<td data-label="
+
+Group"><a target="_blank" rel="noopener" href="https://spectrumquest.com.au/">Spectrum Quest</a></td>
+<td data-label="Who for">Neurodiverse people aged 10 to 25</td>
+<td data-label="Notes">In-person tabletop role-playing games. Sessions listed as NDIS claimable.</td>
+</tr>
+<tr>
+<td data-label="
+
+Group"><a target="_blank" rel="noopener" href="https://www.ignitiongamers.com/social-gaming-sessions/">Ignition Gamers</a></td>
+<td data-label="Who for">Autistic people aged 14 to 35 with low support needs</td>
+<td data-label="Notes">Tabletop and Nintendo groups. Confirm session locations.</td>
+</tr>
+<tr>
+<td data-label="
+
+Group"><a target="_blank" rel="noopener" href="https://playtechaustralia.com.au/">Play Tech Australia</a></td>
+<td data-label="Who for">Autistic and neurodivergent people aged 9 to 17 and 18 to 24</td>
+<td data-label="Notes">Social tech club. Not NDIS registered, though many use plan funding.</td>
+</tr>
+<tr>
+<td data-label="
+
+Group"><a target="_blank" rel="noopener" href="https://arcsupportandcare.com.au/ndis-gaming-program/">ARC Support &amp; Care gaming program</a></td>
+<td data-label="Who for">Mainly ages 16 to 35</td>
+<td data-label="Notes">Based in Bundoora. Group events every one to two months.</td>
+</tr>
+<tr>
+<td data-label="
+
+Group"><a target="_blank" rel="noopener" href="https://social.lightmare.com.au/">Lightmare Social Gaming Hub</a></td>
+<td data-label="Who for">Neurodivergent gamers, all ages</td>
+<td data-label="Notes">Online. Good for people who find travel hard.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="autism-adhd-adult-peer-meetups-free">Adult peer meetups (free)</h3>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.meetup.com/neurodivergent-sparks">NeuroSparks</a>: social meetups for autistic, ADHD and other neurodivergent adults, often at City Library in the CBD. No diagnosis needed.</li>
+<li><a target="_blank" rel="noopener" href="https://www.meetup.com/something-to-add">Something To Add (Adult ADHD Melbourne)</a>: in-person ADHD meetups, usually at East Melbourne Library. The group is moving its listings to Facebook.</li>
+</ul>
+<p>Summer dates for the groups were not confirmed. Many pause over Christmas and restart in late January.</p></section>
+<section id="wheelchair" data-group="Access"><p class="eyebrow">Access</p><h2>Wheelchair access</h2><p>The major venues on this list are step-free, and several lend wheelchairs free. Phone ahead for anything marked "check".</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Need</th>
+<th>Where</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="
+
+Need">Changing Places toilets (hoist and adult change table)</td>
+<td data-label="Where"><a target="_blank" rel="noopener" href="https://mcg.org.au/the-stadium/access-and-inclusion/accessible-bathrooms">MCG</a>, Level 1 inside Gate 3. <a target="_blank" rel="noopener" href="https://www.melbourne.vic.gov.au/community/health-support-services/accessing-melbourne/Pages/getting-around-melbourne.aspx">Melbourne Zoo</a>, near the Elliott Avenue entrance. <a target="_blank" rel="noopener" href="https://fedsquare.com/changing-places">Fed Square</a>, 6am to 11:30pm. St Kilda Life Saving Club. Rod Laver Arena. Hamer Hall (the nearest to NGV). All four Zoos Victoria sites. The Round, Nunawading. John Cain Arena and Eastland come from secondary listings. Melbourne Museum does not have one.</td>
+<td data-label="Detail">Many need an MLAK key, including the MCG on event days (staff can help). The <a target="_blank" rel="noopener" href="https://acd.org.au/changing-places/">Changing Places map</a> shows which ones do not, and which have showers.</td>
+</tr>
+<tr>
+<td data-label="
+
+Need">Free wheelchair loan</td>
+<td data-label="Where"><a target="_blank" rel="noopener" href="https://www.melbourne.vic.gov.au/community/health-support-services/accessing-melbourne/Pages/recreation-entertainment-cultural-venues.aspx">Melbourne Museum</a>, free from the foyer, plus a mobility scooter (book on 13 11 02). NGV, free wheelchairs and motorised scooters (book on 03 8620 2222). SEA LIFE, free. <a target="_blank" rel="noopener" href="https://whatson.melbourne.vic.gov.au/article/melbournes-wheelchair-friendly-attractions">Melbourne Zoo</a>, book ahead. Royal Botanic Gardens has wheelchair hire (check cost).</td>
+<td data-label="Detail">Zoo main paths are wheelchair friendly, some side trails are not.</td>
+</tr>
+<tr>
+<td data-label="
+
+Need">Step-free galleries</td>
+<td data-label="Where">NGV International (level entry via the Fed Square side for NGV Australia), ACMI, Melbourne Museum, Scienceworks.</td>
+<td data-label="Detail">Lifts or ramps to all public areas at Melbourne Museum.</td>
+</tr>
+<tr>
+<td data-label="
+
+Need">Wheelchair seating at sport</td>
+<td data-label="Where">MCG, John Cain Arena, Rod Laver Arena, Margaret Court Arena, AAMI Park.</td>
+<td data-label="Detail">At the Australian Open, <a target="_blank" rel="noopener" href="https://www.koobit.com/australian-open-e169">wheelchair bays have companion seats alongside</a> on the three main courts. Companion Cards are accepted for all Melbourne Park events (AXS, 1800 316 964) and for MCG events (Ticketek accessible line, 1300 665 915). The MCG has a sensory room and a free mobility shuttle from Richmond and Jolimont stations.</td>
+</tr>
+<tr>
+<td data-label="
+
+Need">Beach access</td>
+<td data-label="Where">St Kilda, Port Melbourne, Williamstown, Altona, Mordialloc, Hampton, Carrum.</td>
+<td data-label="Detail">Matting and free beach wheelchairs. Details in Free all summer.</td>
+</tr>
+<tr>
+<td data-label="
+
+Need">Bush and trails</td>
+<td data-label="Where"><a target="_blank" rel="noopener" href="https://parkweb.vic.gov.au/get-into-nature/all-abilities-access/all-terrain-wheelchairs">TrailRider all-terrain wheelchairs</a> from Parks Victoria, free. Dandenong Ranges pick-up at <a target="_blank" rel="noopener" href="https://timeout.com/melbourne/travel/accessible-day-trips-from-melbourne">Grants on Sherbrooke, Kallista</a>.</td>
+<td data-label="Detail">Volunteer helpers can be booked free. Book a week ahead.</td>
+</tr>
+<tr>
+<td data-label="
+
+Need">Go karting</td>
+<td data-label="Where">Ace Karts two-seater karts, Albion. Karting Madness, Braybrook, lists a double kart with a passenger wheel that can be locked (secondary listing).</td>
+<td data-label="Detail">A support worker drives and the participant rides. Transfer into a low seat is needed.</td>
+</tr>
+<tr>
+<td data-label="
+
+Need">Outdoor festivals</td>
+<td data-label="Where">St Kilda Festival, Midsumma Carnival, Lunar New Year, Antipodes.</td>
+<td data-label="Detail">Grass, crowds and temporary toilets. Look for the event's access guide and accessible viewing areas, which are usually published a few weeks before.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="wheelchair-getting-there">Getting there</h3>
+<ul>
+<li><strong>Trains and buses</strong>: most are accessible. Use the <a target="_blank" rel="noopener" href="https://acd.org.au/getting-around/">PTV journey planner's accessibility setting</a> or call 1800 800 007.</li>
+<li><strong>Trams</strong>: only low-floor trams at level-access stops work for wheelchairs. Not every route has them, so plan the route first.</li>
+<li><strong>Taxis</strong>: the <a target="_blank" rel="noopener" href="https://www.seniorsonline.vic.gov.au/news/more-accessible-transport-choices-victorians">Multi Purpose Taxi Program</a> pays half the fare up to $60 a trip for eligible members, including wheelchair accessible taxis and Uber.</li>
+<li><strong>Stations</strong>: Travellers Aid at Southern Cross and Flinders Street has service sites for travellers who need assistance. Check their site for what is offered.</li>
+</ul></section>
+<section id="food-relief" data-group="Support"><p class="eyebrow">Support</p><h2>Christmas food relief and community meals</h2><p>Many food relief services close or change hours between Christmas and mid January, and most had not published 2026 closure dates when this was checked. Phone before sending anyone.</p>
+<h3 id="food-relief-christmas-day">Christmas Day</h3>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://seniorsinmelbourne.com.au/volunteer-christmas-day/">Sacred Heart Mission dining hall</a>, 87 Grey St, St Kilda: free meals every day of the year, including Christmas lunch.</li>
+<li><a target="_blank" rel="noopener" href="https://seniorsinmelbourne.com.au/christmas-dining-melbourne/">Melbourne Social Club Christmas Day picnic</a>, Queen Victoria Gardens, St Kilda Rd: Friday 25 December, 12 to 3pm, free, bring your own food. Book online.</li>
+<li><a target="_blank" rel="noopener" href="https://www.givenow.com.au/prahranmissionchristmas">Prahran Mission Christmas Day Lunch</a>, Malvern Town Hall: a large free lunch in past years. Confirm it is running in 2026 and whether booking is needed.</li>
+<li>
+<p>Salvation Army Christmas hampers: <a target="_blank" rel="noopener" href="https://salvationarmy.org.au/boxhill/community-services">ask your local corps</a>. Requests open in early November and run out.</p>
+</li>
+<li>
+<p><a target="_blank" rel="noopener" href="https://seniorsinmelbourne.com.au/volunteer-christmas-day/">Frankston Life Community Christmas lunch</a>, Frankston Arts Centre: a free lunch that has served up to 500 people. Confirm 2026 details.</p>
+</li>
+</ul>
+<h3 id="food-relief-find-food-relief-anywhere-in-melbourne">Find food relief anywhere in Melbourne</h3>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.brimbank.vic.gov.au/living-here/our-wellbeing-and-safety/crisis-support-services">Ask Izzy</a> (askizzy.org.au): free online finder for meals and food parcels near any suburb, with opening hours.</li>
+<li>Vinnies Welfare Assistance, 1800 305 330, Monday to Friday 10am to 3pm, not public holidays.</li>
+<li><a target="_blank" rel="noopener" href="https://www.vinnies.org.au/vic/services/soup-vans">Vinnies Soup Vans</a> run 365 days a year across metropolitan Melbourne, so they keep going through Christmas.</li>
+<li>Your council's food relief page. Most councils publish a current list.</li>
+</ul>
+<h3 id="food-relief-regular-services-by-region">Regular services by region</h3>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Region</th>
+<th>Service</th>
+<th>Usual hours</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="
+
+Region">CBD</td>
+<td data-label="Service"><a target="_blank" rel="noopener" href="https://www.salvationarmy.org.au/melbourne614/what-we-offer/hospitality-kitchen/">Salvation Army Melbourne Project 614</a>, 69 Bourke St</td>
+<td data-label="Usual hours">Free breakfast and lunch Mon to Fri, free dinner seven nights</td>
+<td data-label="Notes">Wheelchair accessible building. 24-hour support.</td>
+</tr>
+<tr>
+<td data-label="
+
+Region">CBD and inner north</td>
+<td data-label="Service"><a target="_blank" rel="noopener" href="https://cms.vinnies.org.au/media/e3be0ppa/vic-inner-city-soup-van-30-6-2025.pdf?folder=victoria__services__soup-vans&amp;path=e3be0ppa/vic-inner-city-soup-van-30-6-2025.pdf">Vinnies Inner City Soup Van</a></td>
+<td data-label="Usual hours">Mon to Sat: 7pm North Melbourne (Clayton Reserve), 7:45pm Fitzroy (King William St), 8:30pm CBD (297 Flinders St)</td>
+<td data-label="Notes">Hot soup, sandwiches, drinks. No booking.</td>
+</tr>
+<tr>
+<td data-label="
+
+Region">Inner north</td>
+<td data-label="Service"><a target="_blank" rel="noopener" href="https://www.smhow.org.au/our-services">St Mary's House of Welcome</a>, 165-169 Brunswick St, Fitzroy</td>
+<td data-label="Usual hours">Breakfast 8:30 to 9:45am, lunch 12 to 1:15pm, Mon to Fri. Open Mon to Sat</td>
+<td data-label="Notes">Adults 18 and over. Showers and emergency help.</td>
+</tr>
+<tr>
+<td data-label="
+
+Region">Inner south</td>
+<td data-label="Service"><a target="_blank" rel="noopener" href="https://seniorsinmelbourne.com.au/volunteer-christmas-day/">Sacred Heart Mission</a>, 87 Grey St, St Kilda</td>
+<td data-label="Usual hours">Free meals every day of the year</td>
+<td data-label="Notes" class="empty"></td>
+</tr>
+<tr>
+<td data-label="
+
+Region">Inner south</td>
+<td data-label="Service"><a target="_blank" rel="noopener" href="https://www.portphillip.vic.gov.au/people-and-community/community-directory/free-food-directory-guide">Father Bob's Pantry</a>, 204 Gladstone St, South Melbourne</td>
+<td data-label="Usual hours">Check</td>
+<td data-label="Notes">Concession card or crisis. Port Phillip's Free Food Directory lists more.</td>
+</tr>
+<tr>
+<td data-label="
+
+Region">North</td>
+<td data-label="Service"><a target="_blank" rel="noopener" href="https://www.justfood.org.au/resources/cheap-food">DIVRS</a>, 285-287 High St, Preston</td>
+<td data-label="Usual hours">Mon, Tue, Thu 11am to 1:30pm</td>
+<td data-label="Notes">Food sharing.</td>
+</tr>
+<tr>
+<td data-label="
+
+Region">North</td>
+<td data-label="Service"><a target="_blank" rel="noopener" href="https://localfoodconnect.org.au/bgmp-category/food-relief/">Salvation Army Preston</a>, 263 Gower St</td>
+<td data-label="Usual hours">Mon to Thu 9:30am to 3:30pm</td>
+<td data-label="Notes">Book by phone, 9471 9111.</td>
+</tr>
+<tr>
+<td data-label="
+
+Region">North</td>
+<td data-label="Service"><a target="_blank" rel="noopener" href="https://localfoodconnect.org.au/local-directory/xtag/food-justice/">Whittlesea Food Collective</a>, Melbourne Polytechnic, Epping</td>
+<td data-label="Usual hours">Mon and Wed 2:30 to 5pm, Fri 10am to 12:30pm</td>
+<td data-label="Notes" class="empty"></td>
+</tr>
+<tr>
+<td data-label="
+
+Region">North east</td>
+<td data-label="Service"><a target="_blank" rel="noopener" href="https://localfoodconnect.org.au/links/local-food-justice-organisations/">BANSIC Food Hub</a>, southern Banyule</td>
+<td data-label="Usual hours">Mon, Wed, Fri 12 to 3pm</td>
+<td data-label="Notes">Banyule residents.</td>
+</tr>
+<tr>
+<td data-label="
+
+Region">West</td>
+<td data-label="Service"><a target="_blank" rel="noopener" href="https://www.brimbank.vic.gov.au/living-here/our-wellbeing-and-safety/crisis-support-services">Helping Hands Mission</a>, 85 Hampshire Rd, Sunshine</td>
+<td data-label="Usual hours">Mon to Fri 10am to 3pm</td>
+<td data-label="Notes">By appointment, 1300 892 010.</td>
+</tr>
+<tr>
+<td data-label="
+
+Region">West</td>
+<td data-label="Service"><a target="_blank" rel="noopener" href="https://www.brimbank.vic.gov.au/living-here/our-wellbeing-and-safety/crisis-support-services">Kororoit Creek Neighbourhood House</a>, 61A Selwyn St</td>
+<td data-label="Usual hours">Wed 10am to 12pm</td>
+<td data-label="Notes">Free community pantry.</td>
+</tr>
+<tr>
+<td data-label="
+
+Region">West</td>
+<td data-label="Service"><a target="_blank" rel="noopener" href="https://www.maribyrnong.vic.gov.au/Residents/Support-in-your-community/Maribyrnong-Support-Finder/Food-relief-in-Maribyrnong">ASRC Foodbank</a>, 214-218 Nicholson St, Footscray</td>
+<td data-label="Usual hours">Mon, Tue, Thu, Fri</td>
+<td data-label="Notes">For people seeking asylum.</td>
+</tr>
+<tr>
+<td data-label="
+
+Region">East</td>
+<td data-label="Service"><a target="_blank" rel="noopener" href="https://wers.org.au/__trashed-26/">Whitehorse Emergency Relief &amp; Support</a>, 1/27 Bank St, Box Hill</td>
+<td data-label="Usual hours">Mon, Wed, Fri 11am to 3pm</td>
+<td data-label="Notes">Closed public holidays. Whitehorse residents.</td>
+</tr>
+<tr>
+<td data-label="
+
+Region">East</td>
+<td data-label="Service"><a target="_blank" rel="noopener" href="https://salvationarmy.org.au/boxhill/community-services">Salvation Army Box Hill</a>, 1010 Whitehorse Rd</td>
+<td data-label="Usual hours">Tue and Thu 10am to 2pm</td>
+<td data-label="Notes">Free food parcels.</td>
+</tr>
+<tr>
+<td data-label="
+
+Region">East</td>
+<td data-label="Service"><a target="_blank" rel="noopener" href="https://www.whitehorse.vic.gov.au/sites/whitehorse.vic.gov.au/files/assets/documents/Food%20Finders%20Brochure%20February%202026.pdf">Stairway Church, The Pantry</a>, 171 Rooks Rd, Vermont</td>
+<td data-label="Usual hours">Tue 2 to 4pm, Wed 10am to 12pm</td>
+<td data-label="Notes">All welcome.</td>
+</tr>
+<tr>
+<td data-label="
+
+Region">Outer east</td>
+<td data-label="Service"><a target="_blank" rel="noopener" href="https://www.yarraranges.vic.gov.au/Our-services/Health-and-wellbeing/Community-relief-and-support-agencies/Food-relief-food-boxes-and-meals">Dandenong Ranges Emergency Relief Service</a></td>
+<td data-label="Usual hours">Mon to Fri 9am to 12:30pm</td>
+<td data-label="Notes">Groceries and vouchers. Yarra Ranges council lists more.</td>
+</tr>
+<tr>
+<td data-label="
+
+Region">South east</td>
+<td data-label="Service"><a target="_blank" rel="noopener" href="https://cms.vinnies.org.au/media/3kwk2kef/vic-south-eastern-soup-van-30-6-2025.pdf?folder=victoria__services__soup-vans&amp;path=3kwk2kef/vic-south-eastern-soup-van-30-6-2025.pdf">Vinnies South Eastern Soup Van</a>, corner Clow and Lonsdale Sts, Dandenong</td>
+<td data-label="Usual hours">Tuesdays 6:15 to 7:15pm</td>
+<td data-label="Notes">Everyone welcome, no booking.</td>
+</tr>
+<tr>
+<td data-label="
+
+Region">South east</td>
+<td data-label="Service"><a target="_blank" rel="noopener" href="https://smaconnect.org.au/resources/emergency-and-community-services/">Cornerstone Contact Centre</a>, Dandenong</td>
+<td data-label="Usual hours">Check weekly schedule</td>
+<td data-label="Notes">Community meals, emergency relief and drop-in.</td>
+</tr>
+<tr>
+<td data-label="
+
+Region">Bayside and peninsula</td>
+<td data-label="Service"><a target="_blank" rel="noopener" href="https://www.frankston.net/_files/ugd/57d68e_ee75258f445a4d4eb990cd6aac32dd52.pdf?index=true">Community Support Frankston</a>, 35 Beach St</td>
+<td data-label="Usual hours">Check</td>
+<td data-label="Notes">Free takeaway hot meals on some days in a 2025 listing.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Some hours come from 2024 and 2025 lists and none are confirmed for the Christmas weeks. Use Ask Izzy or phone the service for current hours.</p></section>
+<section id="geelong" data-group="By area"><p class="eyebrow">By area</p><h2>Geelong, Bellarine and Surf Coast</h2><p>About an hour from Melbourne by V/Line or car. Details below come from council and venue listings checked on 18 Nov 2026. Confirm on the day.</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>When</th>
+<th>What</th>
+<th>Where</th>
+<th>Cost</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="
+
+When">Sat 21 Nov, from 6:30pm</td>
+<td data-label="What">Christmas Opening Night and Carols by the Bay</td>
+<td data-label="Where">Steampacket Gardens, Geelong waterfront</td>
+<td data-label="Cost"><span class="pill">Free</span></td>
+<td data-label="Notes">Floating Christmas Tree lit at 9:15pm with fireworks. Christmas in Geelong runs to 7 Jan.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">21 Nov to 24 Dec, selected nights 6 to 10pm</td>
+<td data-label="What">Adventure Park Christmas Festival of Lights</td>
+<td data-label="Where">Wallington</td>
+<td data-label="Cost">From $44.50 online</td>
+<td data-label="Notes">Under 90cm free. No concession or Companion Card policy found, so phone first.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">21 Nov to 27 Mar</td>
+<td data-label="What">Adventure Park water park</td>
+<td data-label="Where">Wallington</td>
+<td data-label="Cost">From $69 (122cm and over), $54 (90 to 121cm), senior $45</td>
+<td data-label="Notes">Hot, busy and loud on peak days.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">Sat 28 Nov</td>
+<td data-label="What">Festival of Glass Christmas Market</td>
+<td data-label="Where">Drysdale</td>
+<td data-label="Cost"><span class="pill">Free entry</span></td>
+<td data-label="Notes" class="empty"></td>
+</tr>
+<tr>
+<td data-label="
+
+When">Sun 29 Nov</td>
+<td data-label="What">Pasko Sa Geelong (Filipino Christmas festival)</td>
+<td data-label="Where">Geelong</td>
+<td data-label="Cost"><span class="pill">Free</span></td>
+<td data-label="Notes" class="empty"></td>
+</tr>
+<tr>
+<td data-label="
+
+When">23 to 26 Jan</td>
+<td data-label="What">Festival of Sails</td>
+<td data-label="Where">Geelong waterfront and Royal Geelong Yacht Club</td>
+<td data-label="Cost"><span class="pill">Free</span></td>
+<td data-label="Notes">Saturday fireworks, RAAF display, free come-and-try sailing.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">Sat 27 Feb</td>
+<td data-label="What">Pako Festa</td>
+<td data-label="Where">Pakington St, Geelong West</td>
+<td data-label="Cost"><span class="pill">Free</span></td>
+<td data-label="Notes">Stalls 9am to 5pm, parade 11am, performances 12:30 to 5pm. Big crowd at the parade.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">To 28 Feb</td>
+<td data-label="What">Geelong Contemporary Art Prize</td>
+<td data-label="Where">Geelong Gallery</td>
+<td data-label="Cost"><span class="pill">Free</span></td>
+<td data-label="Notes">Open daily 10am to 5pm.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">All summer</td>
+<td data-label="What">National Wool Museum</td>
+<td data-label="Where">Geelong</td>
+<td data-label="Cost">Adult $13, concession $10, child $8, family $40</td>
+<td data-label="Notes">Daily 10am to 5pm. Closed 25 and 26 Dec.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Spilt Milk Geelong (19 Dec) is an alcohol-centred music festival and is not a good fit for most supported outings.</p>
+<h3 id="geelong-accessible-beaches-and-play">Accessible beaches and play</h3>
+<ul>
+<li>Eastern Beach, Geelong: beach matting and a free Mobi-chair, booked through the lifeguard rooms at 95 Eastern Beach Rd.</li>
+<li>Ocean Grove Surf Life Saving Club and Indented Head Boat Club: free Mobi-chairs.</li>
+<li>Surf Coast (Fishermans Beach Torquay, Anglesea Riverbank, Point Roadknight, Lorne): free beach wheelchairs for up to two hours, with matting from early January to mid April.</li>
+<li>Geelong waterfront Carousel has a wheelchair lift. Eastern Park has a Liberty Swing.</li>
+</ul>
+<h3 id="geelong-food-relief-in-geelong">Food relief in Geelong</h3>
+<p>Christmas hours were not published on 18 Nov. Geelong's "Where You Can Eat" Christmas guide usually comes out in early December.</p>
+<ul>
+<li>The Outpost, 42 Little Ryrie St, Geelong.</li>
+<li>Lazarus Community Centre, 202 Myers St, Geelong. Listed as open 365 days.</li>
+<li>Christ Church Geelong community meals and Christmas lunch.</li>
+<li>Geelong Foodshare, 37 to 41 Morgan St, North Geelong.</li>
+<li>Salvation Army Northside, Corio.</li>
+<li>Feed Me (Geelong, Bellarine and Surf Coast), Lara Food Relief, Torquay Food Aid.</li>
+</ul></section>
+<section id="more-melbourne" data-group="By area"><p class="eyebrow">By area</p><h2>More free events across Melbourne</h2><ul>
+<li>Fed Square Open Air at the Square: 4 Feb to 8 Mar 2027, free. Candlelight concerts and outdoor cinema (22 to 25 Feb, 8pm).</li>
+<li>Hume Carols: Craigieburn, Sat 5 Dec, Anzac Park, free. Westmeadows, Fri 18 Dec.</li>
+<li>Knox Carols: Sat 12 Dec, 4 to 9:30pm, Wally Tew Reserve, Ferntree Gully. Free, alcohol and smoke free, assistance dogs welcome.</li>
+<li>Wyndham Carols: Sat 12 Dec, Werribee Park. Adult $25, concession $18, under 12 free.</li>
+<li>From secondary listings, confirm first: Casey Carols Fri 18 Dec, Bayside Carols Tue 8 Dec at Dendy Park, Queens Park Moonee Ponds Sat 5 Dec.</li>
+<li>Year-round meals in the city: Sacred Heart Mission dining hall, St Kilda (breakfast and lunch daily). Salvation Army 614 Magpie Nest Cafe (weekday breakfast, lunch and dinner). St Mary's House of Welcome, Fitzroy (Mon to Fri 8:30am to 4pm, Sat to 12pm). Frankston Life has confirmed a Christmas Day lunch for 25 Dec 2026, time not yet published.</li>
+</ul></section>
+<section id="more-areas" data-group="By area"><p class="eyebrow">By area</p><h2>More areas of Melbourne: north, west, south-east and peninsula</h2><p>Added 23 Nov 2026. Each entry says where the detail came from when it was not the organiser's own page. Confirm before you go.</p>
+<h3 id="more-areas-northern-suburbs">Northern suburbs</h3>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>When</th>
+<th>What</th>
+<th>Where</th>
+<th>Cost</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="
+
+When">Sat 5 Dec, 6 to 9:30pm</td>
+<td data-label="What"><a target="_blank" rel="noopener" href="https://www.merri-bek.vic.gov.au/exploring-merri-bek/arts-merri-bek/festivals-and-major-events/carols-by-the-lake/">Carols by the Lake</a></td>
+<td data-label="Where">Coburg Lake Reserve, Coburg</td>
+<td data-label="Cost"><span class="pill">Free</span></td>
+<td data-label="Notes">Picnic rug event beside the lake. Merri-bek City Band and school choirs.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">Fri 11 Dec</td>
+<td data-label="What"><a target="_blank" rel="noopener" href="https://www.whittlesea.vic.gov.au/Things-to-see-and-do/Events/Events-calendar/Carols-by-Candlelight">Whittlesea Carols by Candlelight</a></td>
+<td data-label="Where">Civic Centre Lawns, South Morang (last year's venue)</td>
+<td data-label="Cost"><span class="pill">Free</span></td>
+<td data-label="Notes">Date from a secondary listing. Last year ran 6 to 9pm. Check the council page.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">18 to 24 Dec, 7:30 to 11pm</td>
+<td data-label="What"><a target="_blank" rel="noopener" href="https://www.banyule.vic.gov.au/Events-activities/Whats-on/Community-events/The-Boulevard-Christmas-lights">The Boulevard Christmas Lights</a></td>
+<td data-label="Where">The Boulevard, Ivanhoe</td>
+<td data-label="Cost"><span class="pill">Free</span></td>
+<td data-label="Notes">Footpath suits wheelchairs but gets very crowded at peak. Buses 546 and 548 stop near the eastern end. Go early in the week for a quieter walk.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">All summer</td>
+<td data-label="What"><a target="_blank" rel="noopener" href="https://acd.org.au/splash-into-summer-the-best-inclusive-splash-parks-in-victoria/">Mill Park All Abilities Play Space and Splash Park</a></td>
+<td data-label="Where">Mill Park</td>
+<td data-label="Cost"><span class="pill">Free</span></td>
+<td data-label="Notes">Fenced. Water jets, misting rings, sensory areas and a Changing Places toilet.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">All summer</td>
+<td data-label="What"><a target="_blank" rel="noopener" href="https://tothotornot.com/?p=9192">Royal Park Nature Play</a></td>
+<td data-label="Where">Parkville</td>
+<td data-label="Cost"><span class="pill">Free</span></td>
+<td data-label="Notes">Fenced accessible play space with a small water play area and accessible sandpit.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">All summer</td>
+<td data-label="What"><a target="_blank" rel="noopener" href="https://humeleisure.vic.gov.au/eligible-discounts">Hume leisure centre pools</a></td>
+<td data-label="Where">Broadmeadows, Craigieburn, Sunbury</td>
+<td data-label="Cost">Concession rates</td>
+<td data-label="Notes">Carer enters free with a Companion Card.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="more-areas-western-suburbs">Western suburbs</h3>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>When</th>
+<th>What</th>
+<th>Where</th>
+<th>Cost</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="
+
+When">All summer</td>
+<td data-label="What"><a target="_blank" rel="noopener" href="https://acd.org.au/splash-into-summer-the-best-inclusive-splash-parks-in-victoria/">Riverwalk Water Play Park</a></td>
+<td data-label="Where">Werribee</td>
+<td data-label="Cost"><span class="pill">Free</span></td>
+<td data-label="Notes">Large splash park with accessible paths, sensory water features and a Changing Places toilet. Very busy on hot days.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">December</td>
+<td data-label="What"><a target="_blank" rel="noopener" href="https://www.hobsonsbay.vic.gov.au/visit/Blog/Christmas-in-Hobsons-Bay/Christmas-carols">Hobsons Bay community carols</a></td>
+<td data-label="Where">Newport, Altona, Altona Meadows, Williamstown</td>
+<td data-label="Cost"><span class="pill">Free</span></td>
+<td data-label="Notes">Four events ran in December 2025. 2026 dates were not confirmed, so check the council page.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">January and February</td>
+<td data-label="What"><a target="_blank" rel="noopener" href="https://www.hobsonsbay.vic.gov.au/Community/Arts-events-and-culture/Events-and-festivals/Major-events-and-festivals/Summer-events/Summer-Sounds">Summer Sounds</a></td>
+<td data-label="Where">Parks around Hobsons Bay</td>
+<td data-label="Cost"><span class="pill">Free</span></td>
+<td data-label="Notes">Free outdoor live music, no booking. 2027 dates not yet published.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Wyndham Carols at Werribee Park (Sat 12 Dec) is listed under More free events across Melbourne.</p>
+<h3 id="more-areas-south-east-and-bayside">South-east and bayside</h3>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>When</th>
+<th>What</th>
+<th>Where</th>
+<th>Cost</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="
+
+When">Sat 28 Nov, 4:30 to 9:30pm</td>
+<td data-label="What"><a target="_blank" rel="noopener" href="https://www.frankston.vic.gov.au/Things-To-Do/Events/Get-Involved-in-Council-Run-Events">Frankston's Christmas Festival</a></td>
+<td data-label="Where">Davey St and surrounds, Frankston</td>
+<td data-label="Cost"><span class="pill">Free</span></td>
+<td data-label="Notes">Free entry and activities. Food and rides cost extra. Busy street event.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">Fri 4 Dec, 5:30 to 8:30pm</td>
+<td data-label="What"><a target="_blank" rel="noopener" href="https://www.greaterdandenong.vic.gov.au/carols-in-harmony-square">Carols in Harmony Square</a></td>
+<td data-label="Where">Harmony Square, 225 Lonsdale St, Dandenong</td>
+<td data-label="Cost"><span class="pill">Free</span></td>
+<td data-label="Notes">Paved town square with food vendors and family activities.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">Sun 13 Dec</td>
+<td data-label="What"><a target="_blank" rel="noopener" href="https://www.weekendnotes.com/whats-on-melbourne-victoria-this-summer-2026-2027/">Stonnington Christmas concert</a></td>
+<td data-label="Where">Como Park, South Yarra</td>
+<td data-label="Cost"><span class="pill">Free</span></td>
+<td data-label="Notes">From a secondary listing. Evening times need a final check.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">Fri 4 Dec, 8 to 10am</td>
+<td data-label="What"><a target="_blank" rel="noopener" href="https://legolanddiscoverycentre.com/melbourne/sensory-sessions">LEGOLAND Discovery Centre sensory session</a></td>
+<td data-label="Where">Chadstone Shopping Centre</td>
+<td data-label="Cost">Tickets from $20</td>
+<td data-label="Notes">Lower light and sound, quiet spaces, reduced numbers. Carer free with a Companion Card. Date from a secondary listing. Adults must visit with a child.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">All summer</td>
+<td data-label="What"><a target="_blank" rel="noopener" href="https://melbourneplaygrounds.com.au/disabled-access-day-2017-celebration-of-the-best-all-abilities-play-spaces-in-melbourne">Markham Reserve play space</a></td>
+<td data-label="Where">Ashburton</td>
+<td data-label="Cost"><span class="pill">Free</span></td>
+<td data-label="Notes">Fenced all abilities play space built around a long ramp, with a Liberty Swing.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">All summer</td>
+<td data-label="What"><a target="_blank" rel="noopener" href="https://acd.org.au/melbourne-playgrounds/">Deep Creek Eco Playground</a></td>
+<td data-label="Where">Pakenham</td>
+<td data-label="Cost"><span class="pill">Free</span></td>
+<td data-label="Notes">Fenced all abilities play space in a bush setting. Changing Places toilet and cafe nearby.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">All summer</td>
+<td data-label="What"><a target="_blank" rel="noopener" href="https://www.gumbuya.com.au/accessibility">Gumbuya World</a></td>
+<td data-label="Where">Tynong North</td>
+<td data-label="Cost">Paid</td>
+<td data-label="Notes">Step-free routes across the park and three free loan wheelchairs. Companion Card welcomed, ask what the companion ticket covers.</td>
+</tr>
+<tr>
+<td data-label="
+
+When">Early February</td>
+<td data-label="What">Frankston Waterfront Festival</td>
+<td data-label="Where">Frankston Waterfront</td>
+<td data-label="Cost"><span class="pill">Free</span></td>
+<td data-label="Notes">Ran 6 and 7 Feb in 2026. The 2027 date was not published on 23 Nov.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="more-areas-mornington-peninsula-and-phillip-island">Mornington Peninsula and Phillip Island</h3>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.visitmorningtonpeninsula.org/Places-To-See/Trips-Itineraries/Accessible-Beaches">Mothers Beach, Mornington</a>: concrete ramps down to the sand, with beach matting to the water.</li>
+<li>Mount Martha Beach: beach matting, and Mobi-chairs from the life saving club on weekends.</li>
+<li><a target="_blank" rel="noopener" href="https://www.mornpen.vic.gov.au/Community-Services/Disability-Services/Activities/Recreation">Sailability</a> runs over summer at Hastings, Mornington and Blairgowrie yacht clubs.</li>
+<li><a target="_blank" rel="noopener" href="https://penguins.org.au/attractions/penguin-parade/accessibility">Phillip Island Penguin Parade</a>: the companion of a Companion Card holder gets in free on every ticket type, but the ticket must be booked by phone on 03 5951 2830. We Care card holders pay the pensioner rate. A free wheelchair is available in the visitor centre. There is no bus back to Melbourne after the parade, so this needs a car or a tour. Mid December to late January is the busiest time.</li>
+</ul>
+<h3 id="more-areas-city-attractions-to-add-to-the-list">City attractions to add to the list</h3>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Venue</th>
+<th>Adult</th>
+<th>Concession</th>
+<th>Companion Card</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="
+
+Venue"><a target="_blank" rel="noopener" href="https://www.melbourneskydeck.com.au/faq/">Melbourne Skydeck</a>, Southbank</td>
+<td data-label="Adult">Online from $30.60</td>
+<td data-label="Concession">Online from $24.65</td>
+<td data-label="Companion Card">Carer free with a Companion, Carer or WeCare card</td>
+<td data-label="Notes">Show the card at the admissions desk. Wheelchair friendly. Allow 45 minutes.</td>
+</tr>
+<tr>
+<td data-label="
+
+Venue"><a target="_blank" rel="noopener" href="https://www.oldmelbournegaol.com.au/visit-and-contact/">Old Melbourne Gaol</a>, CBD</td>
+<td data-label="Adult">$38</td>
+<td data-label="Concession">$30</td>
+<td data-label="Companion Card">Free second ticket for the companion</td>
+<td data-label="Notes">Child $22. Open daily 10am to 5pm. No lift, so only the ground floor suits wheelchairs.</td>
+</tr>
+<tr>
+<td data-label="
+
+Venue"><a target="_blank" rel="noopener" href="https://carols.visionaustralia.org/tickets">Vision Australia's Carols by Candlelight</a>, Sidney Myer Music Bowl</td>
+<td data-label="Adult">Listed from $27 to $41</td>
+<td data-label="Concession">Check Ticketek</td>
+<td data-label="Companion Card">Access arrangements for Companion Card holders</td>
+<td data-label="Notes">Thu 24 Dec, gates 4pm, show 8pm. Rehearsal night Wed 23 Dec is cheaper and quieter. Auslan on 24 Dec and audio description available.</td>
+</tr>
+<tr>
+<td data-label="
+
+Venue"><a target="_blank" rel="noopener" href="https://www.broadwayworld.com/article/Kids-Summer-Entertainment-Comes-to-Arts-Centre-Melbourne-20260914">Erth's Dinosaurs</a>, Arts Centre Melbourne</td>
+<td data-label="Adult">Ticketed</td>
+<td data-label="Concession">Check</td>
+<td data-label="Companion Card">Ask the box office</td>
+<td data-label="Notes">9 to 17 Jan 2027. Life-sized puppets. Ask the box office about a Relaxed Performance.</td>
+</tr>
+<tr>
+<td data-label="
+
+Venue"><a target="_blank" rel="noopener" href="https://strikebowling.com.au/about/accessibility">Strike Bowling</a></td>
+<td data-label="Adult">Varies</td>
+<td data-label="Concession">Discount for people with disability</td>
+<td data-label="Companion Card">Carer bowls and plays laser tag free</td>
+<td data-label="Notes">Several Melbourne venues.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="more-areas-free-in-the-city">Free in the city</h3>
+<ul>
+<li>Bees by Polyglot Theatre: free interactive outdoor show on the Arts Centre Melbourne Forecourt, 18 to 24 Jan 2027.</li>
+<li><a target="_blank" rel="noopener" href="https://whatson.melbourne.vic.gov.au/things-to-do/the-christmas-night-market">Queen Vic Market Christmas Night Market</a>: Wednesdays 25 Nov, 2, 9 and 16 Dec, 5 to 10pm (dates from a secondary listing). Free entry, crowded after 6:30pm.</li>
+<li><a target="_blank" rel="noopener" href="https://whatson.melbourne.vic.gov.au/things-to-do/christmas-festive-markets-at-collins-square">Christmas Festive Markets at Collins Square</a>, Docklands: 9 and 10 Dec. Free, indoors, with accessible toilets.</li>
+<li>Fed Square shows free Christmas films outdoors in the lead-up to Christmas Day.</li>
+</ul>
+<h3 id="more-areas-still-to-confirm-for-these-areas">Still to confirm for these areas</h3>
+<ul>
+<li>Whittlesea Carols venue and time, Hobsons Bay carols dates, and the Stonnington concert time.</li>
+<li>Frankston Waterfront Festival 2027 and Springvale Lunar New Year 2027 dates.</li>
+<li>LEGOLAND and SEA LIFE December sensory session dates on the venues' own booking pages.</li>
+<li>Which Mornington Peninsula beaches have matting out this season. The council lists them on its accessible beaches page.</li>
+</ul></section>
+<section id="pools" data-group="Access"><p class="eyebrow">Access</p><h2>Accessible pools</h2><p>Added 23 Nov 2026 from each centre's own access page. Council pools usually charge concession entry and let a carer in free with a Companion Card. Bring your own sling for any hoist, and phone ahead to check the equipment is working.</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Pool</th>
+<th>Area</th>
+<th>Getting in the water</th>
+<th>Other access</th>
+<th>Carer entry</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="
+
+Pool"><a target="_blank" rel="noopener" href="https://www.activemonash.vic.gov.au/Accessibility">Monash aquatic centres</a></td>
+<td data-label="Area">South-east</td>
+<td data-label="Getting in the water">Pool Pods, sling hoist, aqua wheelchairs, ramp to the warm water pool, beach entry to the wave pool</td>
+<td data-label="Other access">Hearing loop, dry wheelchairs</td>
+<td data-label="Carer entry">Free with Companion Card. 10% off for Carer Card holders.</td>
+</tr>
+<tr>
+<td data-label="
+
+Pool"><a target="_blank" rel="noopener" href="https://www.maribyrnong.vic.gov.au/mac/Pool/Pool-facilities/Accessible-facilities-at-MAC">Maribyrnong Aquatic Centre</a></td>
+<td data-label="Area">West</td>
+<td data-label="Getting in the water">Ramps to the warm water, 50 metre and leisure pools, aquatic wheelchairs, movable hoist</td>
+<td data-label="Other access">Warm water pool is 1.1 to 1.3m deep</td>
+<td data-label="Carer entry">Free with Companion Card</td>
+</tr>
+<tr>
+<td data-label="
+
+Pool"><a target="_blank" rel="noopener" href="https://bawc.brimbank.vic.gov.au/facilities-and-services/accessibility-at-BAWC">Brimbank Aquatic and Wellness Centre</a></td>
+<td data-label="Area">West</td>
+<td data-label="Getting in the water">Ramp with handrail to every pool, aqua wheelchairs, beach entry to the splash park</td>
+<td data-label="Other access">Two Changing Places (MLAK key) and a sensory room</td>
+<td data-label="Carer entry">Companion Card accepted</td>
+</tr>
+<tr>
+<td data-label="
+
+Pool"><a target="_blank" rel="noopener" href="https://active.merri-bek.vic.gov.au/accessibility/">Merri-bek pools</a>, including Coburg Olympic outdoor pool</td>
+<td data-label="Area">North</td>
+<td data-label="Getting in the water">Gradual ramp entry, aquatic wheelchair, hoist into the spa</td>
+<td data-label="Other access">Adult change table at some centres, wheelchair recharge point</td>
+<td data-label="Carer entry">Free with Companion Card</td>
+</tr>
+<tr>
+<td data-label="
+
+Pool"><a target="_blank" rel="noopener" href="https://www.darebin.vic.gov.au/Events-and-facilities/Sport-in-Darebin/Reservoir-Leisure-Centre/Access-and-inclusion-at-RLC">Reservoir Leisure Centre</a></td>
+<td data-label="Area">North</td>
+<td data-label="Getting in the water">Pool hoist rated to 136kg. No ramp.</td>
+<td data-label="Other access" class="empty"></td>
+<td data-label="Carer entry">One companion free with Companion Card</td>
+</tr>
+<tr>
+<td data-label="
+
+Pool"><a target="_blank" rel="noopener" href="https://www.maroondahleisure.com.au/What-we-offer/Accessible-facilites-and-programs">Maroondah leisure centres</a></td>
+<td data-label="Area">East</td>
+<td data-label="Getting in the water">Entry ramps, waterproof wheelchair, mobile hoist at the warm water pool</td>
+<td data-label="Other access">Changing Places room. Handrail right around the warm water pool.</td>
+<td data-label="Carer entry">Ask at reception</td>
+</tr>
+<tr>
+<td data-label="
+
+Pool"><a target="_blank" rel="noopener" href="https://yarraranges.vic.gov.au/Community/Disability-Support/Accessible-recreation">Lilydale and Healesville outdoor pools</a></td>
+<td data-label="Area">Outer east</td>
+<td data-label="Getting in the water">Beach entry program pools</td>
+<td data-label="Other access">Lilydale has a Changing Places. Healesville does not.</td>
+<td data-label="Carer entry">Ask at reception</td>
+</tr>
+<tr>
+<td data-label="
+
+Pool">Rosebud Aquatic Centre</td>
+<td data-label="Area">Peninsula</td>
+<td data-label="Getting in the water">Railed ramps to the warm water and main pools, portable hoist</td>
+<td data-label="Other access">Changing Places change room</td>
+<td data-label="Carer entry">Free with Companion Card</td>
+</tr>
+</tbody>
+</table></div>
+<p>Hume pools (north) are listed under More areas of Melbourne.</p></section>
+<section id="hot-days" data-group="Planning"><p class="eyebrow">Planning</p><h2>Hot days and total fire ban days</h2><p>Melbourne had several days above 40 degrees and statewide total fire bans last January. Have an indoor plan ready for every outdoor outing.</p>
+<h3 id="hot-days-check-the-night-before">Check the night before</h3>
+<ul>
+<li>Total fire bans are <a target="_blank" rel="noopener" href="https://news.cfa.vic.gov.au/news/total-fire-ban-declared-for-entire-state">usually published on the CFA website by 5pm the day before</a>.</li>
+<li>The VicEmergency app shows heat, fire and storm warnings. The Bureau of Meteorology issues heatwave warnings.</li>
+</ul>
+<h3 id="hot-days-what-closes">What closes</h3>
+<ul>
+<li>Parks Victoria can close parks on extreme days. <a target="_blank" rel="noopener" href="https://news.cfa.vic.gov.au/news/extreme-conditions-prompt-heat-and-fire-warning">Dandenong Ranges National Park has been closed on past total fire ban days</a>, which affects Sherbrooke and TrailRider bookings.</li>
+<li>Outdoor attractions can shut. <a target="_blank" rel="noopener" href="https://www.geelongcity.vic.gov.au/whats-happening/news-and-updates/extreme-heat-service-changes-friday-9-january">Geelong's Carousel closed on total fire ban days last January</a>, while council pools stayed open.</li>
+<li>Check Puffing Billy, outdoor cinemas, markets and zoo hours on the morning.</li>
+</ul>
+<h3 id="hot-days-swap-to">Swap to</h3>
+<ul>
+<li>Air-conditioned and free: NGV, ACMI, State Library, local libraries, shopping centres. Melbourne Museum and Scienceworks are free with a concession card.</li>
+<li>Indoor pools from the Accessible pools list.</li>
+<li>Early starts. Plan activity for the coolest part of the day and be home by early afternoon.</li>
+</ul>
+<h3 id="hot-days-on-the-day">On the day</h3>
+<ul>
+<li>Carry water, a hat and any medication that must stay cool. Some medications and conditions make heat harder to cope with, so check the person's support plan.</li>
+<li>Never leave anyone waiting in a parked car.</li>
+</ul></section>
+<section id="transport" data-group="Planning"><p class="eyebrow">Planning</p><h2>Getting there: transport and travel costs</h2><ul>
+<li><strong>Companion Card on public transport:</strong> the companion travels free with the cardholder. See the PTV link under Sources.</li>
+<li><strong>Carer Card:</strong> a <a target="_blank" rel="noopener" href="https://ptv.vic.gov.au/tickets/myki/concessions-and-free-travel/carer-card">Carer myki gives half-price travel</a> and free weekend travel in two consecutive zones.</li>
+<li><strong>Christmas Day and New Year's Eve:</strong> in recent years <a target="_blank" rel="noopener" href="https://www.metrotrains.com.au/christmas-new-year-travel/">public transport has been free from 3am Christmas Day to 3am Boxing Day, and from 6pm New Year's Eve to 6am New Year's Day</a>. It is announced each December, so check PTV for 2026. Christmas Day runs to a Sunday timetable.</li>
+<li><strong>Trams:</strong> most trams and stops are still not step-free. The state's own accessibility framework says <a target="_blank" rel="noopener" href="https://www.vic.gov.au/transport-accessibility-strategic-framework/problem">about 75 per cent of tram stops lack raised platforms and about 60 per cent of trams have high floors</a>. Use the PTV journey planner's accessibility filter, and pick a level-access stop at both ends.</li>
+<li><strong>Multi Purpose Taxi Program:</strong> members get <a target="_blank" rel="noopener" href="https://safetransport.vic.gov.au/on-the-road/multi-purpose-taxi-program/mptp-members/">half off each taxi fare, up to $60 a trip</a>. It also works on Uber. People who permanently use a wheelchair are exempt from the yearly cap. Phone 1800 638 802.</li>
+<li><strong>Wheelchair accessible taxis</strong> are scarce on Christmas Day, New Year's Eve and during the Australian Open. Book well ahead.</li>
+</ul></section>
+<section id="regulars" data-group="What&#x27;s on"><p class="eyebrow">What&#x27;s on</p><h2>Low-cost regulars and adult social options</h2><h3 id="regulars-libraries-free-air-conditioned-quiet">Libraries (free, air-conditioned, quiet)</h3>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.plv.org.au/projects/big-summer-read/">BIG Summer Read</a>: a free reading challenge for ages 0 to 18 at every Victorian public library, 1 December to 31 January, on paper or online.</li>
+<li>Most libraries run free January holiday activities such as craft, scavenger hunts and games. Check your council library's events page. Many need no booking.</li>
+<li>For adults: free computer help, conversation circles, book clubs and one-to-one literacy tutoring at many libraries.</li>
+</ul>
+<h3 id="regulars-neighbourhood-houses-and-community-centr">Neighbourhood houses and community centres</h3>
+<ul>
+<li>Low-cost classes, community lunches and social groups in most suburbs. Many close from before Christmas until late January, so check dates now.</li>
+<li>Men's sheds suit adults who like hands-on projects. Most welcome a support worker.</li>
+</ul>
+<h3 id="regulars-adults-18-and-over">Adults (18 and over)</h3>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.meetup.com/djsldevents">Dark Room Disco</a>: an alcohol-free, DJ-led early evening dance session in the CBD, described by the organiser as NDIS-friendly. The same group lists open-air discos at Coburg Lake and Queens Park, Moonee Ponds. From the organiser's Meetup page, dates not checked.</li>
+<li><a target="_blank" rel="noopener" href="https://www.seniorsonline.vic.gov.au/discounts/city-melbourne-bowls-club">City of Melbourne Bowls Club</a>, West Melbourne: casual barefoot bowls for $8 with a Seniors or Carer Card, and 10% off food and drinks.</li>
+<li>Strike Bowling: carer bowls free with a Companion Card.</li>
+<li>Arts Access Victoria lists accessible gigs and studio programs through the year.</li>
+<li>Ability Fest, the fully accessible music festival, ran in April in 2026. A 2027 date has not been announced.</li>
+</ul></section>
+<section id="yarra-dandenongs" data-group="By area"><p class="eyebrow">By area</p><h2>Yarra Valley and Dandenong Ranges</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://yarraranges.vic.gov.au/Community/Disability-Support/Accessible-recreation">Yarra Valley Trail</a>, Lilydale to Yering: gravel, rated easy, 7.5km one way. Go as far as suits and turn back.</li>
+<li><a target="_blank" rel="noopener" href="https://www.parks.vic.gov.au/get-into-nature/all-abilities-access/park-accessibility-information/dandenong-ranges-national-park-accessibility">Grants Picnic Ground</a>, Sherbrooke: the accessible entry point to Dandenong Ranges National Park, with sealed disabled parking bays.</li>
+<li>Margaret Lester Forest Walk, Dandenong Ranges National Park: a sensory trail built for all abilities.</li>
+<li>Healesville Sanctuary: wheelchair hire, sensory maps and guided tours by electric buggy. Prices are in the paid attractions table.</li>
+<li>Yarra Ranges Regional Museum, Lilydale: accessible toilet on the ground floor. The council says it can be loud on busy days and suggests bringing headphones.</li>
+<li>Seville Water Play Park: free splash park, busy on hot days.</li>
+<li>Yarra Ranges Council's accessible recreation page lists every pool, playspace and Changing Places in the area.</li>
+<li>This whole area is high fire risk. Check for a total fire ban before every trip.</li>
+</ul></section>
+<section id="nye-cinemas" data-group="What&#x27;s on"><p class="eyebrow">What&#x27;s on</p><h2>New Year&#x27;s Eve, 26 January and outdoor cinemas</h2><h3 id="nye-cinemas-new-year-s-eve">New Year's Eve</h3>
+<ul>
+<li>The City of Melbourne had still not published 2026 details on 23 Nov. <a target="_blank" rel="noopener" href="https://www.racv.com.au/royalauto/living/community/new-years-eve-celebrations-victoria.html">Last year the free Celebration Zones ran 6pm to 1am, were alcohol-free and had accessible toilets, with family fireworks at 9:30pm and more at midnight</a>. Flagstaff Gardens was one of four zones.</li>
+<li>Suburban options are listed for Footscray Park (Maribyrnong) and Greater Dandenong. Check each council for 2026 times.</li>
+<li>Fireworks are loud and crowds are dense. The 9:30pm show with ear defenders, or a view of the skyline from a distance, is the lower-stress choice.</li>
+</ul>
+<h3 id="nye-cinemas-26-january">26 January</h3>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.onlymelbourne.com.au/share-the-spirit">Share the Spirit Festival</a>: Tue 26 Jan 2027, Treasury Gardens. A free, alcohol-free, family-friendly celebration of Aboriginal and Torres Strait Islander music and culture, with market stalls. The date is from a secondary listing. It was Auslan interpreted in 2026.</li>
+</ul>
+<h3 id="nye-cinemas-outdoor-cinemas-beyond-moonlight">Outdoor cinemas beyond Moonlight</h3>
+<ul>
+<li>Sunset Cinema: last summer it ran at Abbotsford Convent in December and St Kilda Botanical Gardens from January to March. 2026-27 dates were not published on 23 Nov.</li>
+<li><a target="_blank" rel="noopener" href="https://www.classiccinemas.com.au/events/classic-rooftop">Classic Rooftop</a>, Elsternwick, and Lido on the Roof, Hawthorn: new releases on the roof all summer. No refunds for weather. Ask about lift access before booking.</li>
+<li>Dromana Drive-In, Mornington Peninsula: watching from your own car suits people who find crowds or noise hard.</li>
+<li>Fed Square screens free films outdoors on some summer nights.</li>
+</ul></section>
+<section id="workers" data-group="Support"><p class="eyebrow">Support</p><h2>Guide for support workers</h2><h3 id="workers-cards-to-bring">Cards to bring</h3>
+<ul>
+<li><strong>Concession card</strong> (Pensioner Concession, Health Care or Disability Concession card): gets the participant the concession price. Venues ask to see it at entry, and some want photo ID as well.</li>
+<li><strong>Companion Card</strong>: the support worker's ticket is free at affiliated venues when the participant buys their own ticket. Say you need a companion ticket at the time of booking and show the card on the day. The companion ticket should carry no booking fee, and it <a target="_blank" rel="noopener" href="https://www.service.tas.gov.au/companion-card/your-card/using-your-card">still applies when the participant buys a concession ticket</a>.</li>
+<li><strong>Public transport</strong>: with a Companion Card the support worker <a target="_blank" rel="noopener" href="https://ptv.vic.gov.au/tickets/myki/concessions-and-free-travel/companion-card">travels free on trains, trams and buses</a> when travelling with the participant. The participant still needs their own valid ticket.</li>
+</ul>
+<h3 id="workers-who-pays">Who pays</h3>
+<ul>
+<li>As a general guide, the participant pays their own entry and food. Where a venue does not accept the Companion Card, check the participant's plan and your provider's policy before the day to settle who covers the worker's ticket.</li>
+</ul>
+<h3 id="workers-planning-the-day">Planning the day</h3>
+<ul>
+<li>Book online in advance. It is cheaper at the zoo and aquarium, and the Australian Open Ground Passes are capped this year.</li>
+<li>On hot days choose indoor venues (NGV, ACMI, museums, aquarium, cinema) or go early. Carry water, hats and sunscreen, and plan shade breaks.</li>
+<li>For big free events (tree lighting, New Year's Eve, St Kilda Festival, Lunar New Year) arrive early, agree a meeting point, and have an exit plan if the crowd or noise becomes too much. Fireworks and firecrackers are part of several events.</li>
+<li>Check accessible toilets and Changing Places facilities on the venue's access page before you go, and phone ahead for beach wheelchair bookings.</li>
+<li>Ask venues for a social story or sensory map. Melbourne Museum, Scienceworks, ACMI and Arts Centre Melbourne all offer them.</li>
+</ul></section>
+<section id="families" data-group="Support"><p class="eyebrow">Support</p><h2>Guide for participants and families</h2><h3 id="families-start-with-what-you-enjoy">Start with what you enjoy</h3>
+<ul>
+<li>Use the By interest and hobby table first, then check the dated calendar for anything happening soon.</li>
+<li>If crowds or noise are hard, look at Autism and ADHD specific for low sensory sessions, and pick weekday mornings where you can.</li>
+<li>If money is tight, Top picks and Free all summer list what costs nothing. Melbourne Museum and Scienceworks are free with a concession card.</li>
+</ul>
+<h3 id="families-cards-worth-having">Cards worth having</h3>
+<ul>
+<li><strong>Companion Card</strong>: if you need a support person to take part, their ticket is free at thousands of venues, and they travel free with you on public transport. It is free to apply through the Victorian Companion Card program.</li>
+<li><strong>Concession card</strong> (Pensioner Concession, Health Care or Disability Concession): cheaper entry almost everywhere. Carry it every time.</li>
+<li><strong>Victorian Carer Card</strong>: for unpaid family carers. Discounts, half-price weekday travel and free weekend travel.</li>
+<li><strong>Multi Purpose Taxi Program</strong>: half-price taxi and Uber fares, up to $60 a trip, if you cannot use public transport because of disability.</li>
+</ul>
+<h3 id="families-what-to-tell-your-support-worker-before-">What to tell your support worker before an outing</h3>
+<ul>
+<li>What you want to get out of the day, and what would make you want to leave.</li>
+<li>Access needs: wheelchair or mobility aid, Changing Places toilet, hearing or vision support, quiet breaks.</li>
+<li>Sensory triggers such as fireworks, crowds, bright light or strong smells.</li>
+<li>Your budget for tickets, food and transport, and which cards you hold.</li>
+<li>Medication times, heat sensitivity and anything else that affects timing.</li>
+</ul>
+<h3 id="families-who-pays-for-what">Who pays for what</h3>
+<ul>
+<li>As a general guide, you pay for your own ticket, food and travel, the same as anyone else. Your NDIS plan may fund the support worker's time to go with you. Plans differ, so check yours or ask your plan manager or support coordinator.</li>
+<li>Ask every venue about a Companion Card ticket before paying for your support worker.</li>
+</ul>
+<h3 id="families-making-the-day-easier">Making the day easier</h3>
+<ul>
+<li>Ask the venue for a social story, sensory map or access guide. Melbourne Museum, Scienceworks, ACMI, NGV and Arts Centre Melbourne publish them.</li>
+<li>Book ahead online. It is usually cheaper and avoids queues.</li>
+<li>On hot days choose indoor, air-conditioned venues, or go early and finish by lunch.</li>
+<li>Have a plan B nearby. NGV, ACMI and Fed Square are next to each other, so a change of plan is a short walk.</li>
+</ul></section>
+<section id="sources" data-group="Support"><p class="eyebrow">Support</p><h2>Sources and gaps</h2><h3 id="sources-not-confirmed-check-before-sharing-as-fa">Not confirmed, check before sharing as fact</h3>
+<ul>
+<li>Public concession prices for the Australian Open, Boxing Day Test and BBL. They only show inside the Ticketek or Ticketmaster booking flow.</li>
+<li>A-League ticket prices.</li>
+<li>New Year's Eve 2026 zones and fireworks times. The City of Melbourne had not published them on 18 Nov.</li>
+<li>Box Hill Chinese New Year Festival date. The festival's own site showed 13 Feb 2027, and the Melbourne Lunar New Year site lists Sun 7 Feb 2027. Phone before promoting it.</li>
+<li>Queen Vic Market Summer Night Market. Dates (Wednesdays, 6 Jan to 10 Mar 2027, 5 to 10pm) still come from the trader pack only.</li>
+<li>Zoo Twilights 2027, Australia Day 2027 programs and Boroondara Summer in the Park 2027. Nothing published yet.</li>
+<li>Christmas and New Year hours for food relief services. Almost none are published before early December.</li>
+<li>Summer session dates for the social groups, discos and art studios. Many pause over the holidays.</li>
+<li>Film release dates, which change often.</li>
+<li>Hand-control go karts (none found), and wheelchair access on miniature railways and Puffing Billy.</li>
+<li>Changing Places at John Cain Arena and Eastland. Confirm on the Changing Places map.</li>
+<li>Adventure Park Geelong concession pricing and Companion Card policy. None found.</li>
+<li>Geelong New Year's Eve fireworks time (listed as 9:30pm, not confirmed on the council page).</li>
+</ul>
+<h3 id="sources-checked-on-18-nov-2026-and-confirmed-on-">Checked on 18 Nov 2026 and confirmed on official pages</h3>
+<ul>
+<li>Companion Card: accepted at Melbourne Museum and IMAX, NGV ticketed shows, Zoos Victoria, SEA LIFE, Moonlight Cinema, all Melbourne Park events and MCG events.</li>
+<li>Melbourne Museum has no hoist or adult change facility, so it was removed from the Changing Places list.</li>
+<li>IMAX adult feature price corrected to $27 to $31.50.</li>
+<li>Whitehorse Carols: Sat 19 Dec, activities 5:30pm, performances 6:30 to 9:30pm.</li>
+<li>Chinatown Lunar New Year Festival: Sun 7 Feb 2027, 10am to 9pm.</li>
+<li>Melbourne Disability Expo: Fri 20 and Sat 21 Nov, 9am to 3pm, MCEC, free entry, Quiet Hour Saturday 9 to 10am.</li>
+<li>NBL prices, Fortress hours and prices, Ace Karts address and hours, BBL fixture (six MCG games).</li>
+<li>NDIS: the NDIA says the NDIS can't fund event tickets, and the pricing rules exclude a paid support worker's entry cost. The Companion Card is the main way to cover a worker's entry.</li>
+</ul>
+<h3 id="sources-official-pages-used">Official pages used</h3>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://museumsvictoria.com.au/melbournemuseum/ticketing">Museums Victoria: Melbourne Museum tickets</a>, <a target="_blank" rel="noopener" href="https://museumsvictoria.com.au/scienceworks/tickets/">Scienceworks tickets</a>, <a target="_blank" rel="noopener" href="https://museumsvictoria.com.au/scienceworks/whats-on/low-sensory-sessions/">Low Sensory Sessions</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.ngv.vic.gov.au/">NGV</a> and <a target="_blank" rel="noopener" href="https://www.ngv.vic.gov.au/margaret-preston-exhibition-access-guide/">Margaret Preston access guide</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.zoo.org.au/melbourne/melbourne-zoo-prices/">Zoos Victoria prices</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.visitsealife.com/melbourne/tickets-passes/">SEA LIFE Melbourne tickets</a></li>
+<li><a target="_blank" rel="noopener" href="https://lunapark.com.au/tickets/">Luna Park tickets</a> and <a target="_blank" rel="noopener" href="https://lunapark.com.au/frequently-asked-questions/general/">FAQ</a></li>
+<li><a target="_blank" rel="noopener" href="https://puffingbillyrailway.org.au/visit-us/fares-timetables/">Puffing Billy fares</a></li>
+<li><a target="_blank" rel="noopener" href="https://villagecinemas.com.au/events/sensory-friendly-films">Village Cinemas Sensory Friendly Films</a> and <a target="_blank" rel="noopener" href="https://www.hoyts.com.au/accessibility">Hoyts accessibility</a></li>
+<li><a target="_blank" rel="noopener" href="https://melbourne.moonlight.com.au/">Moonlight Cinema Melbourne</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.mso.com.au/performance/2027-smmb-the-call-of-adventure">MSO Sidney Myer Free Concerts</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.stkildafestival.com.au/">St Kilda Festival</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.melbournepark.com.au/news/australian-open-2027-your-ultimate-guide/">Melbourne Park: Australian Open 2027 guide</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.mcg.org.au/events/2026/december/boxing-day-test-day-1-australia-v-new-zealand">MCG: Boxing Day Test</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.portphillip.vic.gov.au/explore-the-city/beaches-parks-and-playgrounds/accessible-beaches">City of Port Phillip accessible beaches</a></li>
+<li><a target="_blank" rel="noopener" href="https://ptv.vic.gov.au/tickets/myki/concessions-and-free-travel/companion-card">PTV Companion Card</a></li>
+<li>Council pages: <a target="_blank" rel="noopener" href="https://www.manningham.vic.gov.au/events/manningham-carols-candlelight-2026">Manningham</a>, <a target="_blank" rel="noopener" href="https://www.monash.vic.gov.au/Things-to-Do/Festivals-and-Events/Monash-Carols-by-Candlelight-2025">Monash</a>, <a target="_blank" rel="noopener" href="https://www.boroondara.vic.gov.au/explore-boroondara/events-and-activities">Boroondara</a>, <a target="_blank" rel="noopener" href="https://www.creativewhitehorse.vic.gov.au/carols">Creative Whitehorse</a></li>
+</ul>
+<h3 id="sources-keep-checking-for-new-listings">Keep checking for new listings</h3>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://whatson.melbourne.vic.gov.au/things-to-do/new-years-eve">What's On Melbourne</a> (City of Melbourne)</li>
+<li><a target="_blank" rel="noopener" href="https://aaaplay.org.au/events/">AAA Play events</a> for inclusive sport and recreation</li>
+<li>Midsumma program, released 24 Nov</li>
+<li>Your local council's what's-on page</li>
+</ul></section>
+  </main>
+</div>
+
+<footer class="bc">
+  <p>Compiled by Tony Bailey, Bailey Code. General information only. It is not NDIS, financial or medical advice.</p>
+  <p>Last checked 18 November 2026. More areas, pools, transport and hot-day planning added 23 November 2026. Items that could not be confirmed are listed under Sources and gaps.</p>
+  <p class="fm"><a href="/">Bailey Code</a> &middot; <a href="/support-work">Support work</a> &middot; <a href="/ndis-plain-english">NDIS plain English</a> &middot; <a href="/privacy">Privacy</a></p>
+</footer>
+<script>
+(function(){
+  var q=document.getElementById('q'), status=document.getElementById('status');
+  var sections=[].slice.call(document.querySelectorAll('main section'));
+  var items=[].slice.call(document.querySelectorAll('main section li, main section tbody tr'));
+  items.forEach(function(el){el._t=el.textContent.toLowerCase()});
+  function search(){
+    var v=q.value.trim().toLowerCase(), n=0;
+    items.forEach(function(el){var hit=!v||el._t.indexOf(v)>-1;el.classList.toggle('hq',!hit);if(hit&&v)n++});
+    sections.forEach(function(s){
+      var any=!v||s.querySelector('li:not(.hq), tbody tr:not(.hq)');
+      s.classList.toggle('hq',!any);
+    });
+    status.textContent=v?(n?n+' matching '+(n===1?'entry':'entries')+' for "'+q.value.trim()+'"':'Nothing matches "'+q.value.trim()+'". Try a venue, suburb or activity.'):'';
+  }
+  q.addEventListener('input',search);
+
+  // calendar filters
+  var cal=document.getElementById('calendar');
+  if(cal){
+    var order=['Nov','Dec','Jan','Feb','Mar','Apr'];
+    var rows=[].slice.call(cal.querySelectorAll('tbody tr'));
+    rows.forEach(function(r){
+      var c=r.cells[0].textContent, found=[];
+      c.replace(/Nov|Dec|Jan|Feb|Mar|Apr/g,function(m){found.push(order.indexOf(m))});
+      var set={};
+      if(!found.length){order.forEach(function(m){set[m]=1})}
+      else if(/ to /.test(c)&&found.length>1){for(var i=found[0];i<=found[found.length-1];i++)set[order[i]]=1}
+      else found.forEach(function(i){set[order[i]]=1});
+      r._m=set; r._free=!!r.querySelector('.pill');
+    });
+    var month='all', free=false, past=false, fb=document.getElementById('freeOnly'), pb=document.getElementById('showPast');
+    var MI={Nov:10,Dec:11,Jan:0,Feb:1,Mar:2,Apr:3}, today=new Date(); today.setHours(0,0,0,0); var npast=0;
+    rows.forEach(function(r){
+      var c=r.cells[0].textContent, re=/(\d{1,2})(?:\s+(Nov|Dec|Jan|Feb|Mar|Apr))?/g, m, last=null, days=[];
+      while((m=re.exec(c))){ if(/^\s*(:|am|pm)/.test(c.slice(re.lastIndex))||c.charAt(m.index-1)===':')continue; days.push({d:+m[1],mon:m[2],i:m.index}); }
+      // each day takes the next named month after it
+      for(var k=days.length-1,cur=null;k>=0;k--){ if(days[k].mon)cur=days[k].mon; days[k].mon=cur; }
+      days.forEach(function(x){ if(!x.mon||x.d>31)return; var mi=MI[x.mon], y=mi>=10?2026:2027, dt=new Date(y,mi,x.d); if(!last||dt>last)last=dt; });
+      r._past=!!last&&last<today; if(r._past)npast++;
+    });
+    if(!npast&&pb)pb.style.display='none'; else if(pb)pb.textContent='Show '+npast+' past event'+(npast===1?'':'s');
+    function apply(){rows.forEach(function(r){r.classList.toggle('hm',month!=='all'&&!r._m[month]);r.classList.toggle('hf',free&&!r._free);r.classList.toggle('hp',!past&&r._past)})}
+    if(pb)pb.addEventListener('click',function(){past=!past;pb.setAttribute('aria-pressed',past?'true':'false');apply()});
+    apply();
+    cal.querySelectorAll('[data-month]').forEach(function(b){b.addEventListener('click',function(){
+      month=b.dataset.month;
+      cal.querySelectorAll('[data-month]').forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});
+      apply();
+    })});
+    fb.addEventListener('click',function(){free=!free;fb.setAttribute('aria-pressed',free?'true':'false');apply()});
+  }
+
+  // active section in nav
+  var links=[].slice.call(document.querySelectorAll('.rail a, .chipsnav a'));
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){
+      if(!e.isIntersecting)return;
+      links.forEach(function(a){
+        var on=a.getAttribute('href')==='#'+e.target.id;a.classList.toggle('on',on);
+        if(on&&a.parentNode.classList.contains('chipsnav')){var p=a.parentNode;p.scrollLeft=a.offsetLeft-p.clientWidth/2+a.clientWidth/2}
+      });
+    })},{rootMargin:'-20% 0px -70% 0px'});
+    sections.forEach(function(s){io.observe(s)});
+  }
+})();
+</script>
+</body>
+</html>
