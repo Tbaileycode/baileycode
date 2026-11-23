@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact and Enquiries | Bailey Code</title>
+<meta name="description" content="Enquire about AI consulting for human services, join the counselling waitlist, or ask about support work. Bailey Code, Melbourne.">
+<link rel="canonical" href="https://baileycode.com/contact">
+<meta property="og:title" content="Contact and Enquiries | Bailey Code">
+<meta property="og:description" content="Enquire about AI consulting, join the counselling waitlist, or ask about support work.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://baileycode.com/contact">
+<meta property="og:site_name" content="Bailey Code">
+<meta property="og:locale" content="en_AU">
+<meta name="theme-color" content="#0d0b08">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta property="og:image" content="https://baileycode.com/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://baileycode.com/og.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144,400;1,9..144,500&family=JetBrains+Mono:wght@400;500&display=swap">
+<script>document.documentElement.classList.add("js")</script>
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body class="page">
+<nav class="navbar scrolled">
+  <div class="navbar-inner">
+    <a href="/" class="brand">Bailey<span class="mark">Code</span></a>
+    <div class="navlinks">
+      <a href="/ai-consulting">AI consulting</a>
+      <a href="/counselling">Counselling</a>
+      <a href="/#guides">Guides</a>
+      <a href="/contact">Contact</a>
+    </div>
+    <a href="/contact" class="nav-cta">Work with me</a>
+  </div>
+</nav>
+<main>
+<section class="page-hero">
+  <div class="col">
+    <p class="crumbs"><a href="/">Bailey Code</a> / Contact</p>
+    <p class="sec-eyebrow">Contact · Enquiries</p>
+    <h1 class="sec-head">Tell me what you <em>need.</em></h1>
+    <p class="sec-intro lead">Pick what fits and send a few lines. I reply personally, usually within two business days. Counselling is not open yet, so that option adds you to the waitlist.</p>
+  </div>
+</section>
+<section class="prose-sec">
+  <div class="col prose">
+    <form id="enq" class="enq" novalidate>
+      <label>I'm enquiring about
+        <select name="topic" id="topic">
+          <option value="ai">AI consulting for human services</option>
+          <option value="counselling">Counselling waitlist</option>
+          <option value="support">Support work</option>
+          <option value="other">Something else</option>
+        </select>
+      </label>
+      <label>Your name <input name="name" required autocomplete="name"></label>
+      <label>Email <input name="email" type="email" required autocomplete="email"></label>
+      <label>Organisation <span class="opt">(optional)</span> <input name="org" autocomplete="organization"></label>
+      <label>A few lines about what you're after <textarea name="message" rows="5" required></textarea></label>
+      <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
+      <p class="callout" id="enq-note">Please don't send sensitive health or NDIS details here. We can cover that once we've spoken.</p>
+      <button class="btn btn-primary" type="submit">Send enquiry <span class="btn-arrow">&rarr;</span></button>
+      <p id="enq-status" role="status" aria-live="polite"></p>
+    </form>
+    <p>Prefer email? <a href="mailto:hello@baileycode.com">hello@baileycode.com</a>. If you're in crisis, call Lifeline on 13 11 14 or 000.</p>
+  </div>
+</section>
+<style>
+.enq{display:grid;gap:18px;max-width:640px}
+.enq label{display:grid;gap:8px;font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-dim,#b9ab90)}
+.enq input,.enq select,.enq textarea{font:16px/1.5 Fraunces,Georgia,serif;letter-spacing:0;text-transform:none;color:var(--ink);background:rgba(236,223,197,.05);border:1px solid var(--rule-strong);border-radius:2px;padding:13px 14px;width:100%}
+.enq input:focus,.enq select:focus,.enq textarea:focus{outline:2px solid var(--gold);outline-offset:1px}
+.enq .opt{text-transform:none;letter-spacing:0;opacity:.7}
+#enq-status{min-height:1.5em}
+</style>
+<script>
+(function(){
+var f=document.getElementById("enq"),st=document.getElementById("enq-status"),t=document.getElementById("topic");
+var p=new URLSearchParams(location.search).get("topic");if(p&&t.querySelector('option[value="'+p+'"]'))t.value=p;
+var labels={ai:"AI consulting",counselling:"Counselling waitlist",support:"Support work",other:"Enquiry"};
+f.addEventListener("submit",function(e){e.preventDefault();
+ var d=Object.fromEntries(new FormData(f).entries());
+ if(d.website)return;
+ if(!d.name||!d.email||!d.message||d.email.indexOf("@")<1){st.textContent="Please fill in your name, a valid email and a few lines.";return}
+ st.textContent="Sending...";
+ fetch("/api/enquire",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify(d)})
+ .then(function(r){if(!r.ok)throw 0;f.reset();st.textContent="Thanks, got it. I'll reply personally soon."})
+ .catch(function(){
+  var sub=encodeURIComponent("["+labels[d.topic]+"] "+d.name);
+  var body=encodeURIComponent(d.message+"\n\n"+d.name+(d.org?" ("+d.org+")":"")+"\n"+d.email);
+  st.innerHTML='Couldn\'t send from here. <a href="mailto:hello@baileycode.com?subject='+sub+'&body='+body+'">Open it in your email app</a> or write to hello@baileycode.com.';
+ });
+});
+})();
+</script>
+</main>
+<footer>
+  <div class="col-wide footer-inner">
+    <div class="footer-brand">Bailey<span class="mark">Code</span></div>
+    <div class="footer-meta"><a href="/ai-consulting">AI consulting</a> &middot; <a href="/counselling">Counselling</a> &middot; <a href="/support-work">Support work</a> &middot; <a href="/adhd-and-addiction">ADHD &amp; addiction</a> &middot; <a href="/ndis-plain-english">NDIS plain English</a> &middot; <a href="/summer-outings-guide">Summer outings guide</a> &middot; Melbourne &middot; &copy; 2026 Tony Bailey &middot; <a href="/privacy">Privacy</a></div>
+  </div>
+</footer>
+<script>
+(function(){var rm=window.matchMedia("(prefers-reduced-motion: reduce)").matches;var els=[].slice.call(document.querySelectorAll("[data-reveal]"));
+if(rm||!("IntersectionObserver" in window)){els.forEach(function(e){e.classList.add("in")});}
+else{var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}})},{threshold:.1});els.forEach(function(e){io.observe(e)});}})();
+</script>
+</body>
+</html>
